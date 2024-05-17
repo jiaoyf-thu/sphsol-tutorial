@@ -1,8 +1,6 @@
 Quick Start
 ===========
 
-.. warning:: This project is under development.
-
 These instructions will get you a copy of the project for development and testing purposes.
 
 Prerequisites
