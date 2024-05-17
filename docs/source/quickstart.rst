@@ -15,6 +15,10 @@ GCC, CMake and Eigen are necessary to run SPHSOL on a Linux computer.
 
 Optionally, some Python packages are required to run ``example.py``.
 
+.. code-block::
+
+pip install numpy pandas scipy open3d
+
 Build & Run
 -----------
 
