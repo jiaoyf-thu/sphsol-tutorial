@@ -7,8 +7,12 @@ Smoothed Particle Hydrodynamics
 SPH Approximation
 ^^^^^^^^^^^^^^^^^
 
-Kernel Function
-^^^^^^^^^^^^^^^
+The key idea of smoothed particle hydrodynamics (SPH) method is to approximate any variable 
+
+.. math::
+    :latex:
+
+    x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 
 Lagrange Equations
 ^^^^^^^^^^^^^^^^^^
