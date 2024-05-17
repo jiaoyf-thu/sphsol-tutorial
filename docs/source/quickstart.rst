@@ -25,7 +25,7 @@ Build & Run
 .. code-block::
 
   git clone https://github.com/jiaoyf-thu/sphsol.git
-  cd SPHSOL
+  cd sphsol
   mkdir build && cd build
   cmake ../ && make
   ./sphsol
