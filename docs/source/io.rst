@@ -36,11 +36,13 @@ The ``Input/1-Settings.txt`` is used to setup the solver and I/O, where the rows
   GRAVITY_SPHERE          [F] : X0,Y0,Z0,R,RHO
   ROTATION                [S] : TARGET/NONE
   ROTATION_TARGET         [F] : RX0,RY0,RZ0,VX0,VY0,VZ0,WX,WY,WZ
-  DAMPING_TIME            [F] : 0.0E0
+  DAMPING_TIME            [F] : TDAMP
   SYMMETRIC_BOUNDARY      [S] : PLANE/NONE
   PLANE_DEFINE            [F] : A,B,C,D
   STABLIZATION            [B] : 0/1
   LATE_STAGE              [B] : 0/1
+
+2. setup the SPH solver;
 
   PARTICLES_NUM           [I] : 106978
   PART_NUM                [I] : 2
