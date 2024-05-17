@@ -10,6 +10,9 @@ The initial states of SPH particles are defined in ``Input/0-Particles.csv``, wh
 
 .. code-block:: python
 
+  ```
+  Example: 0.2-g nylon projectile impacts a 6-cm basalt sphere at 3.2 km/s and 30 deg.
+  ```
   def set_parts_geometry():
 
     # set spatial mode
