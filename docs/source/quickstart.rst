@@ -22,6 +22,8 @@ Optionally, you may require some Python packages to run ``example.py``.
 Build & Run
 -----------
 
+Get the code and run your first simulation.
+
 .. code-block::
 
   git clone https://github.com/jiaoyf-thu/sphsol.git
