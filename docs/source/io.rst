@@ -16,7 +16,65 @@ The particles' ID, position, velocity, part ID, mass and density are necessary a
   "1","0.0e0","0.0e0","0.0e0","0.0e0","0.0e0","0.0e0",0,"0.0e0","0.0e0","1","0.0E0"
   "2","0.0e0","0.0e0","0.0e0","0.0e0","0.0e0","0.0e0",0,"0.0e0","0.0e0","1","0.0E0"
 
-The ``Input/1-Settings.txt`` is used to setup the solver, which includes 4 parts as below.
+The ``Input/1-Settings.txt`` is used to setup the solver, where the rows are fixed and you may choose/define the values of them.
+
+.. code-block::
+
+  KERNEL                  [S] : CUBIC_SPLINE
+  ARTIFICIAL_VISCOSITY    [S] : STANDARD/NONE
+  ARTIFICIAL_HEAT         [S] : STANDARD/NONE
+  ARTIFICIAL_STRESS       [S] : STANDARD/NONE
+  XSPH                    [S] : STANDARD/NONE
+  DENSITY_UPDATE          [S] : DENSITY_SUMMATION/CONTINUOUS_DENSITY
+  NEIGHBOR_SEARCH         [S] : ALL_PAIR/GRID/KDTREE
+  GRAVITY                 [S] : CONST/SPHERE/SELF_GRAVITY/NONE
+  GRAVITY_CONST           [F] : GX,GY,GZ
+  GRAVITY_SPHERE          [F] : X0,Y0,Z0,R,RHO
+  ROTATION                [S] : TARGET/NONE
+  ROTATION_TARGET         [F] : RX0,RY0,RZ0,VX0,VY0,VZ0,WX,WY,WZ
+  DAMPING_TIME            [F] : 0.0E0
+  SYMMETRIC_BOUNDARY      [S] : PLANE/NONE
+  PLANE_DEFINE            [F] : A,B,C,D
+  STABLIZATION            [B] : 0/1
+  LATE_STAGE              [B] : 0/1
+
+  PARTICLES_NUM           [I] : 106978
+  PART_NUM                [I] : 2
+  PART_MAT_ID             [I] : 8,8
+  TOTAL_RUN_TIME          [F] : 1.0E2,2.16E4
+  TIMESTEP_REF            [F] : 5.4E-2
+  TIMESTEP_LIMIT          [F] : 1.0E-1,1.0E1
+  HSML_REF                [F] : 1.08E3
+  HSML_LIMIT              [F] : 5.0E-1,2.0E0
+  VOLUME_MIN              [F] : -1.0E5,-1.0E5,-1.0E5
+  VOLUME_MAX              [F] : 1.0E5,1.0E5,1.0E5
+
+  INPUT_ID                [B] : 1
+  INPUT_POS               [B] : 1
+  INPUT_VEL               [B] : 1
+  INPUT_PART              [B] : 1
+  INPUT_MASS              [B] : 1
+  INPUT_DENSITY           [B] : 1
+  INPUT_IFLAG             [B] : 0
+  INPUT_DAMAGE            [B] : 0
+
+  TOTAL_OUTPUT_STEP       [I] : 10,20
+  OUTPUT_POS              [B] : 1
+  OUTPUT_VEL              [B] : 1
+  OUTPUT_ACC              [B] : 1
+  OUTPUT_PRESSURE         [B] : 1
+  OUTPUT_STRESS           [B] : 1
+  OUTPUT_IFLAG            [B] : 1
+  OUTPUT_MASS             [B] : 1
+  OUTPUT_DENSITY          [B] : 1
+  OUTPUT_ENERGY           [B] : 1
+  OUTPUT_HSML             [B] : 1
+  OUTPUT_C_SOUND          [B] : 0
+  OUTPUT_DAMAGE           [B] : 1
+  OUTPUT_PART             [B] : 0
+  OUTPUT_FRAGMENT         [B] : 1
+  OUTPUT_DISTENTION       [B] : 1
+  OUTPUT_ROTATION         [B] : 1
 
 
 Output
