@@ -20,7 +20,7 @@ The ``Input/1-Settings.txt`` is used to setup the solver and I/O, where the rows
 
 .. Note:: There are 4 input datatypes: ``[I]`` for Integer, ``[F]`` for Float in scientific notation, ``[B]`` for Bool in 0/1, ``S`` for String that you should choose form the given options.
 
-1) setup the SPH solver;
+1 setup the SPH solver;
 
 .. code-block::
 
