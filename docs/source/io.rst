@@ -14,7 +14,6 @@ The initial state of SPH particles should be defined in ``Input/0-Particles``, e
 
   ID,X,Y,Z,VX,VY,VZ,PART,MASS,DENSITY
   0,0.0e0,0.0e0,0.0e0,0.0e0,0.0e0,0.0e0,0,1.0e0,1.0e0
-  1,1.0e0,1.0e0,1.0e0,1.0e0,1.0e0,1,0e0,1,1.0e0,1.0e0
   ...
 
 
