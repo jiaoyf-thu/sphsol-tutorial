@@ -10,10 +10,10 @@ The initial states of SPH particles are defined in ``Input/0-Particles.csv``, wh
 The particles' ID, position, velocity, part ID, mass and density are necessary and should be formatted as
 
 .. csv-table::
-  :header: "ID","X","Y","Z","VX","VY","VZ","PART","MASS","DENSITY"
+  :header: "ID","X","Y","Z","VX","VY","VZ","PART","MASS","DENSITY","IFLAG(optional)","DAMAGE(optional)"
 
-  "0","0.0e0","0.0e0","0.0e0","0.0e0","0.0e0","0.0e0",0,"0.0e0","0.0e0"
-  "1","0.0e0","0.0e0","0.0e0","0.0e0","0.0e0","0.0e0",0,"0.0e0","0.0e0"
+  "0","0.0e0","0.0e0","0.0e0","0.0e0","0.0e0","0.0e0",0,"0.0e0","0.0e0","1","0.0E0"
+  "1","0.0e0","0.0e0","0.0e0","0.0e0","0.0e0","0.0e0",0,"0.0e0","0.0e0","1","0.0E0"
 
 
 
