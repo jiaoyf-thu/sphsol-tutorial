@@ -10,7 +10,6 @@ The initial states of SPH particles are defined in ``Input/0-Particles.csv``, wh
 
 .. code-block:: python
 
-  # set parts geometry
   def set_parts_geometry():
     # set spatial mode
     lattice = "grid"   
