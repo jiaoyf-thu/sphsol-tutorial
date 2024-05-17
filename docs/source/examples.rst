@@ -4,5 +4,5 @@ Examples
 Nylon Projectile Impact Basalt Sphere
 -------------------------------------
 
-Collisions on Large Asteroids
------------------------------
+Large Asteroid Collisions
+-------------------------
