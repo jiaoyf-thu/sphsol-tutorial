@@ -151,6 +151,9 @@ The default units are in m-kg-s. Define your material model with the format as b
 
 .. code-block:: text
 
+  // --------------------------------------------------------------------------------
+  // MATERIAL 0: NAME
+  // --------------------------------------------------------------------------------
   @MATERIAL
   MAT_ID                  [I] : 0
   MAT_NAME                [S] : NAME
