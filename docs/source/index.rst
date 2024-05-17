@@ -10,5 +10,5 @@ Contents
 
 .. toctree::
 
-   usage
-   api
+   quickstart
+   theory
