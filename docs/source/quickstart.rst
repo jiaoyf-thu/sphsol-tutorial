@@ -25,8 +25,8 @@ Build & Run
 .. code-block::
 
   git clone https://github.com/jiaoyf-thu/sphsol.git
-  cd sphsol/PrePost/example/
-  python3 ./test.py
-  cd ../../ && mkdir build && cd build/
+  cd sphsol
+  python3 PrePost/example/test.py
+  mkdir build && cd build/
   cmake ../ && make
   ./sphsol
