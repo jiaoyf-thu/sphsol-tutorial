@@ -19,7 +19,7 @@ The particles' ID, position, velocity, part ID, mass and density are necessary a
 The ``Input/1-Settings.txt`` is used to setup the solver and I/O, where the rows are fixed and you may choose/define the values for them.
 There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notation, ``B`` for bool in 0/1, and ``S`` for string that you should choose from the given options.
 
-.. code-block:: C
+.. code-block::
   
   // --------------------------------------------------------------------------------
   // VERSION 1.7
@@ -92,7 +92,7 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
 The material models should be defined in ``Input/2-Materials.txt``, where we have provided some commonly used models for basalt, pumice, nylon, and aluminum.
 Define your material model with the format as below.
 
-.. code-block:: C
+.. code-block::
 
   // --------------------------------------------------------------------------------
   // MATERIAL 0: NAME
@@ -142,6 +142,9 @@ Define your material model with the format as below.
   CG_CE                   [F] : 0.0E0
   @END
 
-
 Output
 ------
+
+The particles data are exported to ``Output/Particlesxxxx.csv`` in every output step.
+The csv files should be easy to visualize (using e.g., `paraview <https://www.paraview.org/>`_) or convert into other data types.
+You can also monitor the simulation progress in ``Output/Log.txt`` in real time.
