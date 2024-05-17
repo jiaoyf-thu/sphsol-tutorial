@@ -1,34 +1,22 @@
 Quick Start
 ===========
 
-.. _installation:
+These instructions will get you a copy of the project for development and testing purposes.
 
-Installation
-------------
+### Prerequisites
+GCC, CMake and Eigen are necessary to run SPHSOL on a Linux computer.
+```
+sudo apt-get update
+sudo apt-get install build-essential gdb cmake libeigen3-dev
+```
 
-To use Lumache, first install it using pip:
-
-.. code-block:: console
-
-   (.venv) $ pip install lumache
-
-Creating recipes
-----------------
-
-To retrieve a list of random ingredients,
-you can use the ``lumache.get_random_ingredients()`` function:
-
-.. autofunction:: lumache.get_random_ingredients
-
-The ``kind`` parameter should be either ``"meat"``, ``"fish"``,
-or ``"veggies"``. Otherwise, :py:func:`lumache.get_random_ingredients`
-will raise an exception.
-
-.. autoexception:: lumache.InvalidKindError
-
-For example:
-
->>> import lumache
->>> lumache.get_random_ingredients()
-['shells', 'gorgonzola', 'parsley']
-
+### Build & Run
+```
+git clone https://github.com/SPHSOL/sphsol.git
+cd SPHSOL
+```
+```
+mkdir build && cd build
+cmake ../ && make
+./sphsol
+```
