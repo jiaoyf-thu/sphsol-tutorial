@@ -17,8 +17,7 @@ The particles' ID, position, velocity, part ID, mass and density are necessary a
   "2","0.0e0","0.0e0","0.0e0","0.0e0","0.0e0","0.0e0",0,"0.0e0","0.0e0","1","0.0E0"
 
 The ``Input/1-Settings.txt`` is used to setup the solver and I/O, where the rows are fixed and you may choose/define the values for them.
-
-.. Note:: There are 4 input datatypes: ``I`` for integers, ``F`` for floats in scientific notation, ``B`` for bool in 0/1, and ``S`` for string that you should choose from the given options.
+There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notation, ``B`` for bool in 0/1, and ``S`` for string that you should choose from the given options.
 
 .. code-block:: C
   
