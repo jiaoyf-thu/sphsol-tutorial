@@ -1,8 +1,6 @@
 Theory
 =====
 
-.. _installation:
-
 Installation
 ------------
 
