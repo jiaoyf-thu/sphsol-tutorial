@@ -17,7 +17,7 @@ Optionally, you may require some Python packages to run ``example.py``.
 
 .. code-block::
 
-  pip install numpy pandas scipy open3d
+  pip3 install numpy pandas scipy open3d
 
 Build & Run
 -----------
@@ -26,6 +26,7 @@ Build & Run
 
   git clone https://github.com/jiaoyf-thu/sphsol.git
   cd sphsol
+
   mkdir build && cd build
   cmake ../ && make
   ./sphsol
