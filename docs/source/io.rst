@@ -93,7 +93,7 @@ The material models should be defined in ``Input/2-Materials.txt``, where we hav
 Define your material model with the format as below.
 
 .. code-block:: C
-    
+
   // --------------------------------------------------------------------------------
   // MATERIAL 0: NAME
   // --------------------------------------------------------------------------------
