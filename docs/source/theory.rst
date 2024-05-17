@@ -11,7 +11,7 @@ The key idea of smoothed particle hydrodynamics (SPH) method is to approximate a
 
 .. math::
 
-\left \langle f(x) \right \rangle = \int_{\Omega} f(x')W(x-x',h)dx'
+  \left \langle f(x) \right \rangle = \int_{\Omega} f(x')W(x-x',h)dx'
 
 Lagrange Equations
 ^^^^^^^^^^^^^^^^^^
