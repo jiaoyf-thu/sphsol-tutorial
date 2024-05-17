@@ -1,11 +1,11 @@
 Input
 =====
 
-Particles
----------
+Initial Particles
+-----------------
 
-Settings
---------
+Solver Settings
+---------------
 
 Materials
 ---------
