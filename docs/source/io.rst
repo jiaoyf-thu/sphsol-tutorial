@@ -1,17 +1,8 @@
-Input/Output
-============
+I/O
+===
 
-Input Particles
----------------
+Input
+-----
 
-Solver Setting
---------------
-
-Input Materials
----------------
-
-Running Log
------------
-
-Particles Data
---------------
+Output
+------
