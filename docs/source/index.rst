@@ -14,7 +14,7 @@ Learn More
    theory
    io
 
-Contact
--------
+Contact Us
+----------
 
 Feel free to contact us (Yifei Jiao, `jiaoyf.thu@gmail.com <mailto:jiaoyf.thu@gmail.com>`_) if you have any questions.
