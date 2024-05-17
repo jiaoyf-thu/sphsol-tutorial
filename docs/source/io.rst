@@ -6,7 +6,7 @@ I/O
 Input
 -----
 
-To customise your simulation scenario, 
+The ``Input/`` files are necesssary to customise your simulation scenario.
 
 Output
 ------
