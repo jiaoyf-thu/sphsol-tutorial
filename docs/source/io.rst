@@ -23,6 +23,7 @@ The initial states of SPH particles are defined in ``Input/0-Particles.csv``, wh
     tar_rho    = 2700
     tar_center = np.array([0,0,0])
     tar_vel    = np.array([0,0,0])
+
     # create particles for target body
     tar     = part(part_id=0, vel=tar_vel, mass=tar_rho*4./3.*np.pi*tar_cell_r**3/coef, \
               rho=tar_rho, hsml=2.0*eta*tar_cell_r)
@@ -39,6 +40,7 @@ The initial states of SPH particles are defined in ``Input/0-Particles.csv``, wh
     imp_rho    = 1185
     imp_center = np.array([0.015,0.033,0])
     imp_vel    = np.array([0,-3200,0])
+
     # create particles for impactor
     imp     = part(part_id=1, vel=imp_vel, mass=imp_rho*4./3.*np.pi*imp_cell_r**3/coef, \
               rho=imp_rho, hsml=2.0*eta*imp_cell_r)
