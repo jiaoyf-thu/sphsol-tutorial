@@ -6,7 +6,7 @@ Welcome to SPHSOL
 .. Note:: This project is under development.
 
 Learn More
---------
+----------
 
 .. toctree::
 
