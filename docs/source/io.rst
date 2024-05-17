@@ -18,7 +18,7 @@ The particles' ID, position, velocity, part ID, mass and density are necessary a
 
 The ``Input/1-Settings.txt`` is used to setup the solver and I/O, where the rows are fixed and you may choose/define the values for them.
 
-.. Note:: There are 4 datatypes: ``[I]`` for Integer, ``[F]`` for Float in scientific notation, ``[B]`` for Bool in 0/1, ``S`` for String that you should choose form the given options.
+.. Note:: There are 4 input datatypes: ``[I]`` for Integer, ``[F]`` for Float in scientific notation, ``[B]`` for Bool in 0/1, ``S`` for String that you should choose form the given options.
 
 1) setup the SPH solver;
 
