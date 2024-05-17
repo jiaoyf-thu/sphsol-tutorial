@@ -8,7 +8,7 @@ Input
 
 The initial states of SPH particles are defined in ``Input/0-Particles.csv``, formatted as
 
-.. code-block::
+.. code-block:: csv
 
   ID,X,Y,Z,VX,VY,VZ,PART,MASS,DENSITY
   0,0.0e0,0.0e0,0.0e0,0.0e0,0.0e0,0.0e0,0,0.0e0,0.0e0
