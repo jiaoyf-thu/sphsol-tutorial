@@ -29,6 +29,8 @@ Get the code and run your first simulation.
   git clone https://github.com/jiaoyf-thu/sphsol.git
   cd sphsol
 
+Generate the ``Input/0-Particles.csv`` file.
+
 .. code-block::
 
   python3 PrePost/example/test.py
