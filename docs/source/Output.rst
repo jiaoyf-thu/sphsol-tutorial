@@ -1,8 +1,8 @@
 Output
 ======
 
-Log
----
+Running Log
+-----------
 
-Data
-----
+Particles Data
+--------------
