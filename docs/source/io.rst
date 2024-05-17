@@ -13,11 +13,11 @@ The initial states of SPH particles are defined in ``Input/0-Particles.csv``, wh
   # set parts geometry
   def set_parts_geometry():
     # set spatial mode
-    lattice = "grid"
-    eta = eta_grid if lattice == "grid" else eta_hcp
-    coef = coef_grid if lattice == "grid" else coef_hcp
+    lattice = "grid"   
+    eta     = eta_grid  if lattice == "grid" else eta_hcp
+    coef    = coef_grid if lattice == "grid" else coef_hcp
   
-    # shpere target: m-kg-s
+    # sphere target: m-kg-s
     tar_cell_r = 0.0007
     tar_radius = 0.03
     tar_rho = 2700
@@ -30,7 +30,7 @@ The initial states of SPH particles are defined in ``Input/0-Particles.csv``, wh
       return (x-tar_center[0])**2+(y-tar_center[1])**2+(z-tar_center[2])**2 <= tar_radius**2
     tar.create_particles(box_pos,tar_geometry)
   
-    # spherical impactor: m-kg-s
+    # sphere impactor: m-kg-s
     imp_cell_r = 0.0007
     imp_radius = 0.0035
     imp_rho = 1185
@@ -136,7 +136,7 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
   OUTPUT_ROTATION         [B] : 0
 
 The material models should be defined in ``Input/2-Materials.txt``, where we have provided some commonly used models for basalt, pumice, nylon, and aluminum.
-Define your material model with the format as below.
+The default units are in m-kg-s. Define your material model with the format as below.
 
 .. code-block:: text
 
