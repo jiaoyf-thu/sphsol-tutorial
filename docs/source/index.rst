@@ -12,3 +12,8 @@ Contents
 
    quickstart
    theory
+
+Contact
+-------
+
+Feel free to contact us (Yifei Jiao, `jiaoyf.thu@gmail.com <jiaoyf.thu@gmail.com>`_) if you have any questions.
