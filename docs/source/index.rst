@@ -12,9 +12,9 @@ Learn More
    :maxdepth: 2
 
    quickstart
+   theory
    input
    output
-   theory
 
 Contact
 -------
