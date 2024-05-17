@@ -6,7 +6,7 @@ Input
 
 .. Note:: Modify the ``Input/`` files to customise your simulation scenario.
 
-The initial state of SPH particles is defined in ``Input/0-Particles``, formatted as
+The initial states of SPH particles are defined in ``Input/0-Particles.csv``, formatted as
 
 .. code-block::
 
@@ -15,8 +15,7 @@ The initial state of SPH particles is defined in ``Input/0-Particles``, formatte
   1,0.0e0,0.0e0,0.0e0,0.0e0,0.0e0,0.0e0,0,0.0e0,0.0e0
   ...
 
-
-
+You can generate this file by modifying the example
 
 Output
 ------
