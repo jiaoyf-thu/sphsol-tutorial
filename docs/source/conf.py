@@ -2,12 +2,12 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'SPHSOL'
+copyright = '2025, Yifei Jiao'
+author = 'Yifei Jiao'
 
-release = '0.1'
-version = '0.1.0'
+release = '1.7'
+version = '1.7'
 
 # -- General configuration
 
