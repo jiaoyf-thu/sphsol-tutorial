@@ -76,7 +76,7 @@ The particles' ID, position, velocity, part ID, mass and density are necessary a
 The ``Input/1-Settings.txt`` is used to setup the solver and I/O, where the rows are fixed and you may choose/define the values for them.
 There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notation, ``B`` for bool in 0/1, and ``S`` for string that you should choose from the given options.
 
-.. code-block:: text
+.. code-block::
 
   // --------------------------------------------------------------------------------
   // VERSION 1.7
@@ -149,7 +149,7 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
 The material models should be defined in ``Input/2-Materials.txt``, where we have provided some commonly used models for basalt, pumice, nylon, and aluminum.
 The default units are in m-kg-s. Define your material model with the format as below.
 
-.. code-block:: text
+.. code-block::
 
   // --------------------------------------------------------------------------------
   // MATERIAL 0: NAME
