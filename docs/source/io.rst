@@ -20,11 +20,14 @@ The initial states of SPH particles are defined in ``Input/0-Particles.csv``, wh
     # sphere target: m-kg-s
     tar_cell_r = 0.0007
     tar_radius = 0.03
-    tar_rho = 2700
+    tar_rho    = 2700
     tar_center = np.array([0,0,0])
-    tar_vel = np.array([0,0,0])
-    tar = part(part_id=0, vel=tar_vel, mass=tar_rho*4./3.*np.pi*tar_cell_r**3/coef, rho=tar_rho, hsml=2.0*eta*tar_cell_r)
-    box_pos = generate_box(box_size=tar_radius*2*np.array([1,1,1]), box_center=tar_center, r=tar_cell_r, lattice=lattice)
+    tar_vel    = np.array([0,0,0])
+    # create particles for target body
+    tar     = part(part_id=0, vel=tar_vel, mass=tar_rho*4./3.*np.pi*tar_cell_r**3/coef, \
+              rho=tar_rho, hsml=2.0*eta*tar_cell_r)
+    box_pos = generate_box(box_size=tar_radius*2*np.array([1,1,1]), box_center=tar_center, \
+              r=tar_cell_r, lattice=lattice)
     box_pos = rand_rotate(box_pos, tar_center)
     def tar_geometry(x,y,z):
       return (x-tar_center[0])**2+(y-tar_center[1])**2+(z-tar_center[2])**2 <= tar_radius**2
@@ -33,11 +36,14 @@ The initial states of SPH particles are defined in ``Input/0-Particles.csv``, wh
     # sphere impactor: m-kg-s
     imp_cell_r = 0.0007
     imp_radius = 0.0035
-    imp_rho = 1185
+    imp_rho    = 1185
     imp_center = np.array([0.015,0.033,0])
-    imp_vel = np.array([0,-3200,0])
-    imp = part(part_id=1, vel=imp_vel, mass=imp_rho*4./3.*np.pi*imp_cell_r**3/coef_grid, rho=imp_rho, hsml=2.0*eta*imp_cell_r)
-    box_pos = generate_box(box_size=imp_radius*2*np.array([1,1,1]), box_center=imp_center, r=imp_cell_r, lattice="grid")
+    imp_vel    = np.array([0,-3200,0])
+    # create particles for impactor
+    imp     = part(part_id=1, vel=imp_vel, mass=imp_rho*4./3.*np.pi*imp_cell_r**3/coef, \
+              rho=imp_rho, hsml=2.0*eta*imp_cell_r)
+    box_pos = generate_box(box_size=imp_radius*2*np.array([1,1,1]), box_center=imp_center, \
+              r=imp_cell_r, lattice="grid")
     box_pos = rand_rotate(box_pos, imp_center)
     def imp_geometry(x,y,z):
       return (x-imp_center[0])**2+(y-imp_center[1])**2+(z-imp_center[2])**2 <= imp_radius**2
