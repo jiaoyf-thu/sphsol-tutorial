@@ -79,9 +79,6 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
 .. code-block:: text
   
   // --------------------------------------------------------------------------------
-  // VERSION 1.7
-  // DATATYPE [I]: INT, [F]: FLOAT, [B]: 0/1, [S]: STRING
-  // --------------------------------------------------------------------------------
   // SETTINGS: SOLVER
   // --------------------------------------------------------------------------------
   KERNEL                  [S] : CUBIC_SPLINE
@@ -151,9 +148,6 @@ The default units are in m-kg-s. Define your material model with the format as b
 
 .. code-block:: text
 
-  // --------------------------------------------------------------------------------
-  // MATERIAL 0: NAME
-  // --------------------------------------------------------------------------------
   @MATERIAL
   MAT_ID                  [I] : 0
   MAT_NAME                [S] : NAME
