@@ -20,7 +20,7 @@ The ``Input/1-Settings.txt`` is used to setup the solver and I/O, where the rows
 
 .. Note:: There are 4 input datatypes: ``I`` for integers, ``F`` for floats in scientific notation, ``B`` for bool in 0/1, and ``S`` for string that you should choose from the given options.
 
-.. code-block::
+.. code-block:: C
   
   // --------------------------------------------------------------------------------
   // VERSION 1.7
