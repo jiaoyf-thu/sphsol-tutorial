@@ -17,7 +17,7 @@ Optionally, some Python packages are required to run ``example.py``.
 
 .. code-block::
 
-pip install numpy pandas scipy open3d
+  pip install numpy pandas scipy open3d
 
 Build & Run
 -----------
