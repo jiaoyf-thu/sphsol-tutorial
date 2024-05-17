@@ -8,12 +8,16 @@ Prerequisites
 
 GCC, CMake and Eigen are necessary to run SPHSOL on a Linux computer.
 
+.. prompt:: bash $
+
 sudo apt-get update
 sudo apt-get install build-essential gdb cmake libeigen3-dev
 
 
 Build & Run
 -----------
+
+.. prompt:: bash $
 
 git clone https://github.com/SPHSOL/sphsol.git
 cd SPHSOL
