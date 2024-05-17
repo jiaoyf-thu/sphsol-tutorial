@@ -4,8 +4,8 @@ Input
 Initial Particles
 -----------------
 
-Solver Settings
----------------
+Solver Setting
+--------------
 
 Materials
 ---------
