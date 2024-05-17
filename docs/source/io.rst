@@ -142,7 +142,5 @@ Define your material with the format as
   CG_CE                   [F] : 0.0E0
   @END
 
-@END
-
 Output
 ------
