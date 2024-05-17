@@ -90,7 +90,7 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
   OUTPUT_ROTATION         [B] : 0
 
 The material models should be defined in ``Input/2-Materials.txt``, where we have provided some commonly used models for basalt, pumice, nylon, and aluminum.
-Define your material with the format as
+Define your material model with the format as below.
 
 .. code-block:: C
     
