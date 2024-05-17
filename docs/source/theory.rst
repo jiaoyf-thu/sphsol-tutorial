@@ -4,4 +4,4 @@ Theory
 .. autosummary::
    :toctree: generated
 
-   lumache
+   SPHSOL
