@@ -145,6 +145,7 @@ Define your material model with the format as below.
 Output
 ------
 
-The particles data are exported to ``Output/Particlesxxxx.csv`` in every output step.
+The particles data are exported to ``Output/Particlesxxxx.csv`` in each output timestep.
 The csv files should be easy to visualize (using e.g., `paraview <https://www.paraview.org/>`_) or convert into other data types.
+
 You can also monitor the simulation progress in ``Output/Log.txt`` in real time.
