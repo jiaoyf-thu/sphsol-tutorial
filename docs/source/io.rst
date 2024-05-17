@@ -90,6 +90,59 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
   OUTPUT_ROTATION         [B] : 0
 
 The material models should be defined in ``Input/2-Materials.txt``, where we have provided some commonly used models for basalt, pumice, nylon, and aluminum.
+Define your material with the format as
+
+.. code-block:: C
+    
+  // --------------------------------------------------------------------------------
+  // MATERIAL 0: NAME
+  // --------------------------------------------------------------------------------
+  @MATERIAL
+  MAT_ID                  [I] : 0
+  MAT_NAME                [S] : NAME
+  ENUM_EOS                [S] : TILLOTSON/SIMPLIFIED_TILLOTSON/GRUNEISEN
+  ENUM_POROSITY           [S] : P_ALPHA/NONE
+  ENUM_YIELD              [S] : VON_MISES/LUND
+  ENUM_DAMAGE             [S] : NONE/GRADY_KIPP
+  MODULUS_SHEAR           [F] : 0.0E0
+  MODULUS_BULK            [F] : 0.0E0
+  MODULUS_ELASTIC         [F] : 0.0E0
+  @TILLOTSON
+  COEF_A                  [F] : 0.0E0
+  COEF_B                  [F] : 0.0E0
+  ALPHA                   [F] : 0.0E0
+  BETA                    [F] : 0.0E0
+  MODULUS_A               [F] : 0.0E0
+  MODULUS_B               [F] : 0.0E0
+  E0                      [F] : 0.0E0
+  ECV                     [F] : 0.0E0
+  EIV                     [F] : 0.0E0
+  @SIMPLIFIED_TILLOTSON
+  COFF_C                  [F] : 0.0E0
+  MODULUS_A               [F] : 0.0E0
+  @GRUNEISEN
+  S                       [F] : 0.0E0
+  C0                      [F] : 0.0E0
+  GAMMA0                  [F] : 0.0E0
+  @P_ALPHA
+  ALPHA0                  [F] : 0.0E0
+  PE                      [F] : 0.0E0
+  PS                      [F] : 0.0E0
+  @VON_MISES
+  Y0                      [F] : 0.0E0
+  @LUND
+  YI0                     [F] : 0.0E0
+  YD0                     [F] : 0.0E0
+  YM                      [F] : 0.0E0
+  MUI                     [F] : 0.0E0
+  MUD                     [F] : 0.0E0
+  @GRADY_KIPP
+  M                       [F] : 0.0E0
+  K                       [F] : 0.0E0
+  CG_CE                   [F] : 0.0E0
+  @END
+
+@END
 
 Output
 ------
