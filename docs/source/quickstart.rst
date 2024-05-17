@@ -22,7 +22,7 @@ Optionally, you may require some Python packages to run ``PrePost/example/test.p
 Build & Run
 -----------
 
-Get the code and run your first simulation. Then see the results in ``Output`` files.
+Get the code and run your first simulation. The results are exported to ``Output/`` files.
 
 .. code-block::
 
