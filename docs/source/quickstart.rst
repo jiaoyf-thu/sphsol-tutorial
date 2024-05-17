@@ -22,5 +22,6 @@ Build & Run
   git clone https://github.com/SPHSOL/sphsol.git
   cd SPHSOL
   mkdir build && cd build
-  cmake ../ && make
+  cmake ../
+  make
   ./sphsol
