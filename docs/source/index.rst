@@ -11,6 +11,7 @@ Learn More
 .. toctree::
 
    quickstart
+   input
    theory
 
 Contact
