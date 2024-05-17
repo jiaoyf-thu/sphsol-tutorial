@@ -1,7 +1,11 @@
 Theory
 ======
 
-Installation
-------------
+Smoothed Particle Hydrodynamics
+-------------------------------
 
-To use Lumache, first install it using pip:
+Physics Models
+--------------
+
+Numerical Methods
+-----------------
