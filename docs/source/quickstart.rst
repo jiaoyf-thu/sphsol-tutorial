@@ -22,7 +22,7 @@ Optionally, you may require some Python packages to run ``PrePost/example/test.p
 Build & Run
 -----------
 
-Get the code and run your first simulation.
+Get the code and run your first simulation. Then see the results in ``Output`` files.
 
 .. code-block::
 
@@ -32,5 +32,3 @@ Get the code and run your first simulation.
   mkdir build && cd build/
   cmake ../ && make
   ./sphsol
-
-See the results in ``Output`` files.
