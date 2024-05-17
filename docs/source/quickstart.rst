@@ -15,7 +15,7 @@ GCC, CMake and Eigen are necessary to run SPHSOL on a Linux computer.
 
 Optionally, you may require some Python packages to run ``PrePost/example/test.py``.
 
-.. code-block::
+.. prompt:: bash $
 
   pip3 install numpy pandas scipy open3d
 
@@ -24,7 +24,7 @@ Build & Run
 
 Get the code and run your first simulation. The results are exported to ``Output/`` files.
 
-.. code-block::
+.. prompt:: bash $
 
   git clone https://github.com/jiaoyf-thu/sphsol.git
   cd sphsol
