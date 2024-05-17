@@ -7,7 +7,7 @@ Smoothed Particle Hydrodynamics
 SPH Approximation
 ^^^^^^^^^^^^^^^^^
 
-The key idea of smoothed particle hydrodynamics (SPH) method is to approximate any variable 
+The key idea of smoothed particle hydrodynamics (SPH) method is to approximate any field :math:`E=mc^2`
 
 .. math::
     :latex:
