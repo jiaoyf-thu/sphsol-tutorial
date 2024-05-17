@@ -13,8 +13,7 @@ Learn More
 
    quickstart
    theory
-   input
-   output
+   io
 
 Contact
 -------
