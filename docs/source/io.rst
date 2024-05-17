@@ -45,7 +45,7 @@ The initial states of SPH particles are defined in ``Input/0-Particles.csv``, wh
     imp     = part(part_id=1, vel=imp_vel, mass=imp_rho*4./3.*np.pi*imp_cell_r**3/coef, \
               rho=imp_rho, hsml=2.0*eta*imp_cell_r)
     box_pos = generate_box(box_size=imp_radius*2*np.array([1,1,1]), box_center=imp_center, \
-              r=imp_cell_r, lattice="grid")
+              r=imp_cell_r, lattice=lattice)
     box_pos = rand_rotate(box_pos, imp_center)
     def imp_geometry(x,y,z):
       return (x-imp_center[0])**2+(y-imp_center[1])**2+(z-imp_center[2])**2 <= imp_radius**2
