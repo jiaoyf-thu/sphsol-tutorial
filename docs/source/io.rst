@@ -20,41 +20,47 @@ The ``Input/1-Settings.txt`` is used to setup the solver and I/O, where the rows
 
 .. Note:: There are 4 input datatypes: ``I`` for integers, ``F`` for floats in scientific notation, ``B`` for bool in 0/1, and ``S`` for string that you should choose from the given options.
 
-1. setup the SPH solver;
-
 .. code-block::
-
+  
+  // --------------------------------------------------------------------------------
+  // VERSION 1.7
+  // DATATYPE [I]: INT, [F]: FLOAT, [B]: 0/1, [S]: STRING
+  // --------------------------------------------------------------------------------
+  // SETTINGS: SOLVER
+  // --------------------------------------------------------------------------------
   KERNEL                  [S] : CUBIC_SPLINE
-  ARTIFICIAL_VISCOSITY    [S] : STANDARD/NONE
-  ARTIFICIAL_HEAT         [S] : STANDARD/NONE
-  ARTIFICIAL_STRESS       [S] : STANDARD/NONE
-  XSPH                    [S] : STANDARD/NONE
-  DENSITY_UPDATE          [S] : DENSITY_SUMMATION/CONTINUOUS_DENSITY
-  NEIGHBOR_SEARCH         [S] : ALL_PAIR/GRID/KDTREE
-  GRAVITY                 [S] : CONST/SPHERE/SELF_GRAVITY/NONE
-  GRAVITY_CONST           [F] : GX,GY,GZ
-  GRAVITY_SPHERE          [F] : X0,Y0,Z0,R,RHO
-  ROTATION                [S] : TARGET/NONE
-  ROTATION_TARGET         [F] : RX0,RY0,RZ0,VX0,VY0,VZ0,WX,WY,WZ
-  DAMPING_TIME            [F] : TDAMP
-  SYMMETRIC_BOUNDARY      [S] : PLANE/NONE
-  PLANE_DEFINE            [F] : A,B,C,D
-  STABLIZATION            [B] : 0/1
-  LATE_STAGE              [B] : 0/1
-
-2. setup the SPH solver;
-
-  PARTICLES_NUM           [I] : 106978
+  ARTIFICIAL_VISCOSITY    [S] : STANDARD
+  ARTIFICIAL_HEAT         [S] : NONE
+  ARTIFICIAL_STRESS       [S] : NONE
+  XSPH                    [S] : NONE
+  DENSITY_UPDATE          [S] : CONTINUOUS_DENSITY
+  NEIGHBOR_SEARCH         [S] : KDTREE
+  GRAVITY                 [S] : NONE
+  GRAVITY_CONST           [F] : 0.0E0,0.0E0,0.0E0
+  GRAVITY_SPHERE          [F] : 0.0E0,0.0E0,0.0E0,0.0E0,0.0E0
+  ROTATION                [S] : NONE
+  ROTATION_TARGET         [F] : 0.0E0,0.0E0,0.0E0,0.0E0,0.0E0,0.0E0,0.0E0,0.0E0,0.0E0
+  DAMPING_TIME            [F] : 0.0E0
+  SYMMETRIC_BOUNDARY      [S] : NONE
+  PLANE_DEFINE            [F] : 0.0E0,0.0E0,0.0E0,0.0E0
+  STABLIZATION            [B] : 0
+  LATE_STAGE              [B] : 0
+  // --------------------------------------------------------------------------------
+  // SETTINGS: LIMIT
+  // --------------------------------------------------------------------------------
+  PARTICLES_NUM           [I] : 41428
   PART_NUM                [I] : 2
-  PART_MAT_ID             [I] : 8,8
-  TOTAL_RUN_TIME          [F] : 1.0E2,2.16E4
-  TIMESTEP_REF            [F] : 5.4E-2
+  PART_MAT_ID             [I] : 2,3
+  TOTAL_RUN_TIME          [F] : 5.0E-5
+  TIMESTEP_REF            [F] : 8.4E-8
   TIMESTEP_LIMIT          [F] : 1.0E-1,1.0E1
-  HSML_REF                [F] : 1.08E3
+  HSML_REF                [F] : 1.68E-3
   HSML_LIMIT              [F] : 5.0E-1,2.0E0
   VOLUME_MIN              [F] : -1.0E5,-1.0E5,-1.0E5
   VOLUME_MAX              [F] : 1.0E5,1.0E5,1.0E5
-
+  // --------------------------------------------------------------------------------
+  // SETTINGS: INPUT
+  // --------------------------------------------------------------------------------
   INPUT_ID                [B] : 1
   INPUT_POS               [B] : 1
   INPUT_VEL               [B] : 1
@@ -63,24 +69,27 @@ The ``Input/1-Settings.txt`` is used to setup the solver and I/O, where the rows
   INPUT_DENSITY           [B] : 1
   INPUT_IFLAG             [B] : 0
   INPUT_DAMAGE            [B] : 0
-
-  TOTAL_OUTPUT_STEP       [I] : 10,20
+  // --------------------------------------------------------------------------------
+  // SETTINGS: OUTPUT
+  // --------------------------------------------------------------------------------
+  TOTAL_OUTPUT_STEP       [I] : 10
   OUTPUT_POS              [B] : 1
   OUTPUT_VEL              [B] : 1
-  OUTPUT_ACC              [B] : 1
+  OUTPUT_ACC              [B] : 0
   OUTPUT_PRESSURE         [B] : 1
-  OUTPUT_STRESS           [B] : 1
-  OUTPUT_IFLAG            [B] : 1
-  OUTPUT_MASS             [B] : 1
+  OUTPUT_STRESS           [B] : 0
+  OUTPUT_IFLAG            [B] : 0
+  OUTPUT_MASS             [B] : 0
   OUTPUT_DENSITY          [B] : 1
   OUTPUT_ENERGY           [B] : 1
-  OUTPUT_HSML             [B] : 1
+  OUTPUT_HSML             [B] : 0
   OUTPUT_C_SOUND          [B] : 0
   OUTPUT_DAMAGE           [B] : 1
   OUTPUT_PART             [B] : 0
-  OUTPUT_FRAGMENT         [B] : 1
-  OUTPUT_DISTENTION       [B] : 1
-  OUTPUT_ROTATION         [B] : 1
+  OUTPUT_FRAGMENT         [B] : 0
+  OUTPUT_DISTENTION       [B] : 0
+  OUTPUT_ROTATION         [B] : 0
+
 
 
 Output
