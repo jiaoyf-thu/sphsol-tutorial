@@ -13,7 +13,7 @@ GCC, CMake and Eigen are necessary to run SPHSOL on a Linux computer.
   sudo apt-get update
   sudo apt-get install build-essential gdb cmake libeigen3-dev
 
-Optionally, you may require some Python packages to run ``example.py``.
+Optionally, you may require some Python packages to run ``PrePost/example/test.py``.
 
 .. code-block::
 
@@ -32,3 +32,5 @@ Get the code and run your first simulation.
   mkdir build && cd build/
   cmake ../ && make
   ./sphsol
+
+See the results in ``Output`` files.
