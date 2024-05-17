@@ -10,7 +10,6 @@ SPH Approximation
 The key idea of smoothed particle hydrodynamics (SPH) method is to approximate any field :math:`E=mc^2`
 
 .. math::
-    :latex:
 
     x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 
