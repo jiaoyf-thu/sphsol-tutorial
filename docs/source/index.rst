@@ -9,7 +9,6 @@ Learn More
 ----------
 
 .. toctree::
-   :maxdepth: 2
 
    quickstart
    theory
