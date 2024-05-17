@@ -9,9 +9,11 @@ Learn More
 ----------
 
 .. toctree::
+   :maxdepth: 2
 
    quickstart
    input
+   output
    theory
 
 Contact
