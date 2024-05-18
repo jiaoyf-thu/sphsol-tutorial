@@ -14,7 +14,11 @@ The key idea of smoothed particle hydrodynamics (SPH) method is to approximate a
 where :math:`h` is the smoothing length. 
 Replacing the integral with the sum over all particles, the SPH interpolant is discretized as,
 
-.. math:: \left \langle f(x_i) \right \rangle = \sum_j \frac{m_j}{\rho_j}f(x_j)W(x_i-x_j,h)
+.. math:: \left \langle f(x_i) \right \rangle = \sum_j \frac{m_j}{\rho_j} f(x_j) W(x_i-x_j,h)
+
+Similarly, the gradient can be expressed as,
+
+.. math:: \left \langle \nabla \cdot f(x_i) \right \rangle = \sum_j \frac{m_j}{\rho_j} f(x_j) \cdot \nabla_i W(x_i-x_j,h)
 
 The cubic B-spline M4 function has been widely used as the smoothing kernel in the astrophsical community, which is also adopted in our code,
 
