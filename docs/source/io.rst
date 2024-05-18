@@ -28,22 +28,22 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
   // SETTINGS: SOLVER
   // --------------------------------------------------------------------------------
   KERNEL                  [S] : CUBIC_SPLINE
-  ARTIFICIAL_VISCOSITY    [S] : STANDARD
-  ARTIFICIAL_HEAT         [S] : NONE
-  ARTIFICIAL_STRESS       [S] : NONE
-  XSPH                    [S] : NONE
-  DENSITY_UPDATE          [S] : CONTINUOUS_DENSITY
-  NEIGHBOR_SEARCH         [S] : KDTREE
-  GRAVITY                 [S] : NONE
-  GRAVITY_CONST           [F] : 0.0E0,0.0E0,0.0E0
-  GRAVITY_SPHERE          [F] : 0.0E0,0.0E0,0.0E0,0.0E0,0.0E0
-  ROTATION                [S] : NONE
-  ROTATION_TARGET         [F] : 0.0E0,0.0E0,0.0E0,0.0E0,0.0E0,0.0E0,0.0E0,0.0E0,0.0E0
+  ARTIFICIAL_VISCOSITY    [S] : STANDARD/NONE
+  ARTIFICIAL_HEAT         [S] : STANDARD/NONE
+  ARTIFICIAL_STRESS       [S] : STANDARD/NONE
+  XSPH                    [S] : STANDARD/NONE
+  DENSITY_UPDATE          [S] : CONTINUOUS_DENSITY/DENSITY_SUMMATION
+  NEIGHBOR_SEARCH         [S] : KDTREE/GRID/ALL_PAIR
+  GRAVITY                 [S] : CONST/SPHERE/SELF_GRAVITY/NONE
+  GRAVITY_CONST           [F] : GX,GY,GZ
+  GRAVITY_SPHERE          [F] : X0,Y0,Z0,R,RHO
+  ROTATION                [S] : TARGET/NONE
+  ROTATION_TARGET         [F] : RX0,RY0,RZ0,VX0,VY0,VZ0,WX,WY,WZ
   DAMPING_TIME            [F] : 0.0E0
-  SYMMETRIC_BOUNDARY      [S] : NONE
-  PLANE_DEFINE            [F] : 0.0E0,0.0E0,0.0E0,0.0E0
-  STABLIZATION            [B] : 0
-  LATE_STAGE              [B] : 0
+  SYMMETRIC_BOUNDARY      [S] : PLANE/NONE
+  PLANE_DEFINE            [F] : A,B,C,D
+  STABLIZATION            [B] : 0/1
+  LATE_STAGE              [B] : 0/1
   // --------------------------------------------------------------------------------
   // SETTINGS: LIMIT
   // --------------------------------------------------------------------------------
