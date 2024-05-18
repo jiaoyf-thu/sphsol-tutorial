@@ -14,7 +14,7 @@ Replacing the integral with the sum over all particles, the SPH interpolant is d
 
 .. math:: \left \langle f(x_i) \right \rangle = \sum_j \frac{m_j}{\rho_j} f(x_j) W_{ij}
 
-Similarly, the gradient can be expressed as,
+Similarly, the gradient is approximated as,
 
 .. math:: \left \langle \nabla \cdot f(x_i) \right \rangle = \sum_j \frac{m_j}{\rho_j} f(x_j) \cdot \nabla_i W_{ij}
 
