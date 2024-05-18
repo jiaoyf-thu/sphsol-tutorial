@@ -30,7 +30,11 @@ Lagrange Equations
 
 The Lagrange equations describle the conservation of mass, momentum, and energy,
 
-.. math:: \dot(\rho) + \rho(\nabla\cdot r) = 0
+.. math:: \dot{\rho} + \rho(\nabla\cdot r) = 0
+
+.. math:: \dot{v} = \frac{1}{\rho} (\nabla \cdot \sigma) +g
+
+.. math:: \dot{e} = \frac{1}{\rho} (\sigma : \dot{\epsilon})
 
 Artificial Terms
 ^^^^^^^^^^^^^^^^
