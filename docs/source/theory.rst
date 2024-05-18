@@ -29,6 +29,8 @@ where :math:`r=\left \| x_i-x_j \right \| /h`, and :math:`\alpha_d=1/h,15/7\pi h
 Lagrange Equations
 ^^^^^^^^^^^^^^^^^^
 
+The Lagrange equations describle the conservation of mass, momentum, and energy.
+
 Artificial Terms
 ^^^^^^^^^^^^^^^^
 
