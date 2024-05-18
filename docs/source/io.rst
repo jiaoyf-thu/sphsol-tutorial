@@ -41,7 +41,7 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
   ROTATION_TARGET         [F] : RX0,RY0,RZ0,VX0,VY0,VZ0,WX,WY,WZ
   DAMPING_TIME            [F] : DAMPING_TIME
   SYMMETRIC_BOUNDARY      [S] : PLANE/NONE
-  PLANE_DEFINE            [F] : A,B,C,D(AX+BY+CZ+D>0)
+  PLANE_DEFINE            [F] : A,B,C,D
   STABLIZATION            [B] : 0/1
   LATE_STAGE              [B] : 0/1
   // --------------------------------------------------------------------------------
