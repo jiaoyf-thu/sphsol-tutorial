@@ -71,23 +71,23 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
   // --------------------------------------------------------------------------------
   // SETTINGS: OUTPUT
   // --------------------------------------------------------------------------------
-  TOTAL_OUTPUT_STEP       [I] : 10(,LATE_OUTPUT_STEP)
-  OUTPUT_POS              [B] : 1
-  OUTPUT_VEL              [B] : 1
-  OUTPUT_ACC              [B] : 0
-  OUTPUT_PRESSURE         [B] : 1
-  OUTPUT_STRESS           [B] : 0
-  OUTPUT_IFLAG            [B] : 0
-  OUTPUT_MASS             [B] : 0
-  OUTPUT_DENSITY          [B] : 1
-  OUTPUT_ENERGY           [B] : 1
-  OUTPUT_HSML             [B] : 0
-  OUTPUT_C_SOUND          [B] : 0
-  OUTPUT_DAMAGE           [B] : 1
-  OUTPUT_PART             [B] : 0
-  OUTPUT_FRAGMENT         [B] : 0
-  OUTPUT_DISTENTION       [B] : 0
-  OUTPUT_ROTATION         [B] : 0
+  TOTAL_OUTPUT_STEP       [I] : OUTPUT_STEP(,LATE_OUTPUT_STEP)
+  OUTPUT_POS              [B] : 0/1
+  OUTPUT_VEL              [B] : 0/1
+  OUTPUT_ACC              [B] : 0/1
+  OUTPUT_PRESSURE         [B] : 0/1
+  OUTPUT_STRESS           [B] : 0/1
+  OUTPUT_IFLAG            [B] : 0/1
+  OUTPUT_MASS             [B] : 0/1
+  OUTPUT_DENSITY          [B] : 0/1
+  OUTPUT_ENERGY           [B] : 0/1
+  OUTPUT_HSML             [B] : 0/1
+  OUTPUT_C_SOUND          [B] : 0/1
+  OUTPUT_DAMAGE           [B] : 0/1
+  OUTPUT_PART             [B] : 0/1
+  OUTPUT_FRAGMENT         [B] : 0/1
+  OUTPUT_DISTENTION       [B] : 0/1
+  OUTPUT_ROTATION         [B] : 0/1
 
 The material models should be defined in ``Input/2-Materials.txt``, where we have provided some commonly used models for basalt, pumice, nylon, and aluminum.
 The default units are in m-kg-s. Define your material model with the format as below.
