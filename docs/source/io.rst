@@ -39,7 +39,7 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
   GRAVITY_SPHERE          [F] : X0,Y0,Z0,R,RHO
   ROTATION                [S] : TARGET/NONE
   ROTATION_TARGET         [F] : RX0,RY0,RZ0,VX0,VY0,VZ0,WX,WY,WZ
-  DAMPING_TIME            [F] : 0.0E0
+  DAMPING_TIME            [F] : DAMPING_TIME
   SYMMETRIC_BOUNDARY      [S] : PLANE/NONE
   PLANE_DEFINE            [F] : A,B,C,D(AX+BY+CZ+D>0)
   STABLIZATION            [B] : 0/1
@@ -47,16 +47,16 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
   // --------------------------------------------------------------------------------
   // SETTINGS: LIMIT
   // --------------------------------------------------------------------------------
-  PARTICLES_NUM           [I] : 41428
-  PART_NUM                [I] : 2
-  PART_MAT_ID             [I] : 2,3
-  TOTAL_RUN_TIME          [F] : 5.0E-5(,LATE_RUN_TIME)
-  TIMESTEP_REF            [F] : 8.4E-8
-  TIMESTEP_LIMIT          [F] : 1.0E-1,1.0E1
-  HSML_REF                [F] : 1.68E-3
-  HSML_LIMIT              [F] : 5.0E-1,2.0E0
-  VOLUME_MIN              [F] : -1.0E5,-1.0E5,-1.0E5
-  VOLUME_MAX              [F] : 1.0E5,1.0E5,1.0E5
+  PARTICLES_NUM           [I] : PARTICLES_NUM
+  PART_NUM                [I] : PART_NUM
+  PART_MAT_ID             [I] : MAT1(,MAT2,...)
+  TOTAL_RUN_TIME          [F] : RUN_TIME(,LATE_RUN_TIME)
+  TIMESTEP_REF            [F] : DT_REF
+  TIMESTEP_LIMIT          [F] : DT_MIN,DT_MAX
+  HSML_REF                [F] : HSML_REF
+  HSML_LIMIT              [F] : HSML_MIN,HSML_MAX
+  VOLUME_MIN              [F] : X_MIN,Y_MIN,Z_MIN
+  VOLUME_MAX              [F] : X,MAX,Y_MAX,Z_MAX
   // --------------------------------------------------------------------------------
   // SETTINGS: INPUT
   // --------------------------------------------------------------------------------
@@ -66,8 +66,8 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
   INPUT_PART              [B] : 1
   INPUT_MASS              [B] : 1
   INPUT_DENSITY           [B] : 1
-  INPUT_IFLAG             [B] : 0
-  INPUT_DAMAGE            [B] : 0
+  INPUT_IFLAG             [B] : 0/1
+  INPUT_DAMAGE            [B] : 0/1
   // --------------------------------------------------------------------------------
   // SETTINGS: OUTPUT
   // --------------------------------------------------------------------------------
