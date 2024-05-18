@@ -12,11 +12,11 @@ The key idea of smoothed particle hydrodynamics (SPH) method is to approximate a
 .. math:: \left \langle f(x) \right \rangle = \int_{\Omega} f(x')W(x-x',h)dx'
 
 where :math:`h` is the smoothing length. 
-Replacing the integral with the sum over all particles, the SPH interpolant is discretized as
+Replacing the integral with the sum over all particles, the SPH interpolant is discretized as,
 
 .. math:: \left \langle f(x_i) \right \rangle = \sum_j \frac{m_j}{\rho_j}f(x_j)W(x_i-x_j,h)
 
-The cubic B-spline M4 function has been widely used as the smoothing kernel, which is also adopted in our code.
+The cubic B-spline M4 function has been widely used as the smoothing kernel, which is also adopted in our code,
 
 .. math:: W(r) = \frac{1}{6} \alpha_d \times \begin{cases} 4-6r^2+3r^3, & 0\leq r<1 \\ (2-r)^3, & 1\leq r<2\\ 0, & r\geq 2 \end{cases}
 
