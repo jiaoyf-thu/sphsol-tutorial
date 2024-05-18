@@ -7,7 +7,7 @@ Smoothed Particle Hydrodynamics
 SPH Approximation
 ^^^^^^^^^^^^^^^^^
 
-The key idea of the smoothed particle hydrodynamics (SPH) method is to approximate any field :math:`f(x)` using a smoothing kernel :math:`W(r)`,
+The key idea of the smoothed particle hydrodynamics (SPH) method is to approximate any field ``:math:`f(x)``` using a smoothing kernel :math:`W(r)`,
 
 .. math:: \left \langle f(x) \right \rangle = \int_{\Omega} f(x')W(x-x',h)dx'
 
