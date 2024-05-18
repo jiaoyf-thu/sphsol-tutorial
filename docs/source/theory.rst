@@ -10,7 +10,7 @@ The key idea of the smoothed particle hydrodynamics (SPH) method is to approxima
 
 where :math:`h` is the smoothing length.
 
-Replacing the integral with the sum over all supporting particles, the SPH interpolant is discretized as,
+Replacing the integral with the sum over all particles, the SPH interpolant is discretized as,
 
 .. math:: \left \langle f(x_i) \right \rangle = \sum_j \frac{m_j}{\rho_j} f(x_j) W_{ij}
 
