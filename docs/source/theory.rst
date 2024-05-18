@@ -45,7 +45,7 @@ The equations are then discretized using the above SPH approximation,
 
   \left\{\begin{align}
     & \frac{\mathrm{d} \rho_i}{\mathrm{d} t} = \rho_i \sum_j \frac{m_j}{\rho_j} (v_i-v_j) \cdot \nabla_i W_{ij} \\
-    & \frac{\mathrm{d} v_i}{\mathrm{d} t} = \sum_j m_j (\sigma^{\alpha\beta}_i / \rho^2_i + sigma^{\alpha\beta}_j / \rho^2_j -
+    & \frac{\mathrm{d} v_i}{\mathrm{d} t} = \sum_j m_j (\frac{\sigma^{\alpha\beta}_i}{\rho^2_i} + \frac{sigma^{\alpha\beta}_j}{\rho^2_j} -
       \Pi_{ij}\delta^{\alpha\beta}) \cdot \nabla_i W_{ij} \\
     & \frac{\mathrm{d} e_i}{\mathrm{d} t} = \frac{1}{2} \sum_j m_j (p_i/\rho^2_i + p_j/\rho^2_j + \Pi_{ij}) v_{ij} \cdot
       \nabla_i W_{ij} + \frac{1}{\rho_i} s^{\alpha\beta}_i \dot{epsilon}{\alpha\beta}_i
