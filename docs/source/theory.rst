@@ -33,9 +33,9 @@ The Lagrange equations describle the conservation of mass, momentum, and energy,
 .. math:: 
 
   \left\{\begin{align}
-    \dot{\rho} + \rho(\nabla\cdot v) = 0 \\
-    \dot{v} = \frac{1}{\rho} (\nabla \cdot \sigma) +g \\
-    \dot{e} = \frac{1}{\rho} (\sigma : \dot{\epsilon})
+    & \dot{\rho} + \rho(\nabla\cdot v) = 0 \\
+    & \dot{v} = \frac{1}{\rho} (\nabla \cdot \sigma) +g \\
+    & \dot{e} = \frac{1}{\rho} (\sigma : \dot{\epsilon})
   \end{align}\right.
 
 where :math:`\sigma=-pI+s` is the stress tensor, :math:`\dot{\epsilon}=\tfrac{1}{2} (\nabla v + (\nabla v)^\top)` is the strain rate.
