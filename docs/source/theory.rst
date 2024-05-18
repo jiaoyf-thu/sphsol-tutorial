@@ -72,7 +72,7 @@ The artificial stress :math:`\zeta_{ij}` is also implemented to suppress the pos
 
 .. math:: \zeta_{ij} = (\zeta_i+\zeta_j) \left(\frac{W(x_{ij})}{W(\Delta x)}\right)^4
 
-where the tensor :math:`\zeta_i` represent a local measure of tension in the principal axes of :math:`\sigma_i`,
+where :math:`\Delta x` is the mean particle spacing, and the tensor :math:`\zeta_i` represents a local measure of tension in the principal axes of :math:`\sigma_i`,
 
 .. math:: \zeta_i = -0.2\frac{1}{\rho^2_i} U \mathrm{diag}\left(\max(\sigma_i^A,0), \max(\sigma_i^B,0), \max(\sigma_i^C,0)\right) U^\top
 
