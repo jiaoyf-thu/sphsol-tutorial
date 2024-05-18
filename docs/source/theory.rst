@@ -51,6 +51,8 @@ The equations are then discretized using the above SPH approximation,
       v_{ij} \cdot \nabla_i W_{ij} + \frac{1}{\rho_i} s^{\alpha\beta}_i \dot{\epsilon}^{\alpha\beta}_i
   \end{align}\right.
 
+where :math:`\Pi_{ij}` is the artificial viscosity.
+
 Artificial Terms
 ^^^^^^^^^^^^^^^^
 
