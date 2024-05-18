@@ -53,12 +53,6 @@ where :math:`\Pi_{ij}` is the artificial viscosity.
 Artificial Terms
 ----------------
 
-Neighbor Search
----------------
-
-Time Integration
-----------------
-
 Strength Model
 --------------
 
@@ -68,5 +62,11 @@ Equation of State
 Damage Model
 ------------
 
+Neighbor Search
+---------------
+
 Self Gravity
 ------------
+
+Time Integration
+----------------
