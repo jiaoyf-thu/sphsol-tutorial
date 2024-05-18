@@ -30,11 +30,13 @@ Lagrange Equations
 
 The Lagrange equations describle the conservation of mass, momentum, and energy,
 
-.. math:: \dot{\rho} + \rho(\nabla\cdot r) = 0
+.. math:: \dot{\rho} + \rho(\nabla\cdot v) = 0
 
 .. math:: \dot{v} = \frac{1}{\rho} (\nabla \cdot \sigma) +g
 
 .. math:: \dot{e} = \frac{1}{\rho} (\sigma : \dot{\epsilon})
+
+where :math:`sigma=-pI+s` is the stress tensor, :math:`\dot{\epsilon}=\tfrac{1}{2} (\nabla v + (\nabla v)^T)` is the strain rate tensor.
 
 Artificial Terms
 ^^^^^^^^^^^^^^^^
