@@ -50,7 +50,7 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
   PARTICLES_NUM           [I] : 41428
   PART_NUM                [I] : 2
   PART_MAT_ID             [I] : 2,3
-  TOTAL_RUN_TIME          [F] : 5.0E-5
+  TOTAL_RUN_TIME          [F] : 5.0E-5(,LATE_RUN_TIME)
   TIMESTEP_REF            [F] : 8.4E-8
   TIMESTEP_LIMIT          [F] : 1.0E-1,1.0E1
   HSML_REF                [F] : 1.68E-3
@@ -71,7 +71,7 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
   // --------------------------------------------------------------------------------
   // SETTINGS: OUTPUT
   // --------------------------------------------------------------------------------
-  TOTAL_OUTPUT_STEP       [I] : 10
+  TOTAL_OUTPUT_STEP       [I] : 10(,LATE_OUTPUT_STEP)
   OUTPUT_POS              [B] : 1
   OUTPUT_VEL              [B] : 1
   OUTPUT_ACC              [B] : 0
