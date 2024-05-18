@@ -52,9 +52,12 @@ where :math:`\Pi_{ij}` is the artificial viscosity term.
 Artificial Terms
 ----------------
 
-The standard artificial viscosity :math:`\Pi_{ij}` is introduced to handle shocks in SPH, such as particle interpenetration and unphysical oscillations in the pressure field after the shock wave passes.
+The standard artificial viscosity :math:`\Pi_{ij}` is introduced to handle shocks in SPH, such as particle interpenetration and unphysical oscillations in the pressure field after the shock wave passes,
 
+.. math::
 
+  \Pi_{ij} = \begin{cases} \frac{-\alpha_\Pi \bar{c_{ij}} \phi_{ij} + \beta_\Pi \phi^2_{ij}}{\bar{\rho_{ij}}} , & v_{ij} \cdot x_{ij} \leq 0 \\
+    0, & v_{ij} \cdot x_{ij} \leq 0 \end{cases}
 
 Strength Model
 --------------
