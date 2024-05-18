@@ -49,7 +49,7 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
   // --------------------------------------------------------------------------------
   PARTICLES_NUM           [I] : PARTICLES_NUM
   PART_NUM                [I] : PART_NUM
-  PART_MAT_ID             [I] : MAT1(,MAT2,...)
+  PART_MAT_ID             [I] : MAT1(,MAT2,...,MAT_PART_NUM)
   TOTAL_RUN_TIME          [F] : RUN_TIME(,LATE_RUN_TIME)
   TIMESTEP_REF            [F] : DT_REF
   TIMESTEP_LIMIT          [F] : DT_MIN,DT_MAX
