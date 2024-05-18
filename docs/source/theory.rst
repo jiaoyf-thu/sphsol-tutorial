@@ -35,8 +35,7 @@ The Lagrange equations describle the conservation of mass, momentum, and energy,
     & \dot{e} = \frac{1}{\rho} (\sigma : \dot{\epsilon})
   \end{align}\right.
 
-where :math:`\sigma=-pI+s` is the stress tensor, :math:`\dot{\epsilon}=\tfrac{1}{2} (\nabla v + (\nabla v)^\top)` is the strain rate.
-The equations are then discretized using the above SPH approximation,
+where :math:`\sigma=-pI+s` is the stress tensor, :math:`\dot{\epsilon}=\tfrac{1}{2} (\nabla v + (\nabla v)^\top)` is the strain rate. The equations are then discretized using the above SPH approximation,
 
 .. math:: 
 
@@ -48,10 +47,14 @@ The equations are then discretized using the above SPH approximation,
       v_{ij} \cdot \nabla_i W_{ij} + \frac{1}{\rho_i} s_i:\dot{\epsilon}_i
   \end{align}\right.
 
-where :math:`\Pi_{ij}` is the artificial viscosity.
+where :math:`\Pi_{ij}` is the artificial viscosity term.
 
 Artificial Terms
 ----------------
+
+The standard artificial viscosity :math:`\Pi_{ij}` is introduced to handle shocks in SPH, such as particle interpenetration and unphysical oscillations in the pressure field after the shock wave passes.
+
+
 
 Strength Model
 --------------
