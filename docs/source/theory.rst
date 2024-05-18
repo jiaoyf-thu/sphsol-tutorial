@@ -70,11 +70,11 @@ where
 
 The artificial stress :math:`\zeta_{ij}` is also implemented to suppress the possible tensile instability that leads to unphysical clumping of particles,
 
-.. math:: \zeta_{ij} = (R_i+R_j) \left(\frac{W(x_{ij})}{W(\Delta x)}\right)^4
+.. math:: \zeta_{ij} = (\zeta_i+\zeta_j) \left(\frac{W(x_{ij})}{W(\Delta x)}\right)^4
 
-where the tensor :math:`R_i` represent a local measure of tension in the principal axes of :math:`\sigma_i`,
+where the tensor :math:`\zeta_i` represent a local measure of tension in the principal axes of :math:`\sigma_i`,
 
-.. math:: R_i = -0.2\frac{1}{\rho^2_i} U \mathrm{diag}\left(\max(\sigma_i^A,0), \max(\sigma_i^B,0), \max(\sigma_i^C,0)\right) U^\top
+.. math:: \zeta_i = -0.2\frac{1}{\rho^2_i} U \mathrm{diag}\left(\max(\sigma_i^A,0), \max(\sigma_i^B,0), \max(\sigma_i^C,0)\right) U^\top
 
 with the eigendecomposition of :math:`\sigma_i` as :math:`U\mathrm{diag}(\sigma_i^A,\sigma_i^B,\sigma_i^C)U^\top`.
 
