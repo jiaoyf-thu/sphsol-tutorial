@@ -64,6 +64,8 @@ where
 
 .. math:: \phi_{ij} = \frac{\bar{h}_{ij}v_{ij} \cdot x_{ij}}{\left\| x_{ij} \right\|^2 + 0.1 \bar{h}^2_{ij}}
 
+The artificial stress can be implemented to suppress the possible tensile instability
+
 Strength Model
 --------------
 
