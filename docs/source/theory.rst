@@ -9,7 +9,9 @@ SPH Approximation
 
 The key idea of the smoothed particle hydrodynamics (SPH) method is to approximate any field :math:`f(x)` using a smoothing kernel :math:`W(r)`,
 
-.. math:: :nowrap: \left \langle f(x) \right \rangle = \int_{\Omega} f(x')W(x-x',h)dx'
+.. math:: :nowrap:
+
+  \left \langle f(x) \right \rangle = \int_{\Omega} f(x')W(x-x',h)dx'
 
 where :math:`h` is the smoothing length. Replacing the integral with the sum over all particles, the SPH interpolant is discretized as,
 
