@@ -42,12 +42,12 @@ where :math:`\sigma=-pI+s` is the stress tensor, :math:`\dot{\epsilon}=\tfrac{1}
   \left\{\begin{align}
     & \frac{\mathrm{d} \rho_i}{\mathrm{d} t} = \rho_i \sum_j \frac{m_j}{\rho_j} (v_i-v_j) \cdot \nabla_i W_{ij} \\
     & \frac{\mathrm{d} v_i}{\mathrm{d} t} = \sum_j m_j \left(\frac{\sigma_i}{\rho^2_i} + \frac{\sigma_j}{\rho^2_j} -
-      {\color{blue}\Pi_{ij}}I \right) \cdot \nabla_i W_{ij} \\
+      {\color{blue}\Pi_{ij}}I + {\color{red}\zeta_{ij}} \right) \cdot \nabla_i W_{ij} \\
     & \frac{\mathrm{d} e_i}{\mathrm{d} t} = \frac{1}{2} \sum_j m_j \left(\frac{p_i}{\rho^2_i} + \frac{p_j}{\rho^2_j} + {\color{blue}\Pi_{ij}} \right) 
       v_{ij} \cdot \nabla_i W_{ij} + \frac{1}{\rho_i} s_i:\dot{\epsilon}_i
   \end{align}\right.
 
-where :math:`\Pi_{ij}` is the artificial viscosity term.
+where :math:`\Pi_{ij}` is the artificial viscosity and :math:`\zeta_{ij}` is the artificial stress.
 
 Artificial Terms
 ----------------
@@ -64,7 +64,7 @@ where
 
 .. math:: \phi_{ij} = \frac{\bar{h}_{ij}v_{ij} \cdot x_{ij}}{\left\| x_{ij} \right\|^2 + 0.1 \bar{h}^2_{ij}}
 
-The artificial stress is also implemented to suppress the possible tensile instability
+The artificial stress is also implemented to suppress the possible tensile instability.
 
 Strength Model
 --------------
