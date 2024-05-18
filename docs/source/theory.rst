@@ -74,9 +74,9 @@ The artificial stress :math:`\zeta_{ij}` is also implemented to suppress the pos
 
 where the tensor :math:`R_i` represent a local measure of tension in the principal axes of :math:`\sigma_i`,
 
-.. math:: R_i = -0.2\frac{1}{\rho^2_i} U \cdot \mathrm{diag}\left(\max(\sigma_i^A,0), \max(\sigma_i^B,0), \max(\sigma_i^C,0)\right) \cdot U^\top
+.. math:: R_i = -0.2\frac{1}{\rho^2_i} U \mathrm{diag}\left(\max(\sigma_i^A,0), \max(\sigma_i^B,0), \max(\sigma_i^C,0)\right) U^\top
 
-where :math:`\sigma_i = U \cdot \mathrm{diag}(\sigma_i^A,\sigma_i^B,\sigma_i^C) \cdot U^\top`.
+with the eigendecomposition of :math:`\sigma_i` as :math:`U\mathrm{diag}(\sigma_i^A,\sigma_i^B,\sigma_i^C)U^\top`.
 
 Strength Model
 --------------
