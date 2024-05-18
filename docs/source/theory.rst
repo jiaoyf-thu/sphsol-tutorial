@@ -39,6 +39,14 @@ The Lagrange equations describle the conservation of mass, momentum, and energy,
   \end{align}\right.
 
 where :math:`\sigma=-pI+s` is the stress tensor, :math:`\dot{\epsilon}=\tfrac{1}{2} (\nabla v + (\nabla v)^\top)` is the strain rate.
+The equations are then discretized using the above SPH approximation,
+
+.. math:: 
+
+  \left\{\begin{align}
+    & \frac{\mathrm{d} \rho_i}{\mathrm{d} t} = \rho_i \sum_j \frac{m_j}{\rho_j} (v_i-v_j) \cdot \nabla_i W_{ij} \\
+
+  \end{align}\right.
 
 Artificial Terms
 ^^^^^^^^^^^^^^^^
