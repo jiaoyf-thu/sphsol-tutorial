@@ -48,7 +48,7 @@ The equations are then discretized using the above SPH approximation,
     & \frac{\mathrm{d} v_i}{\mathrm{d} t} = \sum_j m_j \left(\frac{\sigma^{\alpha\beta}_i}{\rho^2_i} + \frac{\sigma^{\alpha\beta}_j}{\rho^2_j} -
       \Pi_{ij}\delta^{\alpha\beta} \right) \cdot \nabla_i W_{ij} \\
     & \frac{\mathrm{d} e_i}{\mathrm{d} t} = \frac{1}{2} \sum_j m_j \left(\frac{p_i}{\rho^2_i} + \frac{p_j}{\rho^2_j} + \Pi_{ij} \right) v_{ij} \cdot
-      \nabla_i W_{ij} + \frac{1}{\rho_i} s^{\alpha\beta}_i \dot{epsilon}{\alpha\beta}_i
+      \nabla_i W_{ij} + \frac{1}{\rho_i} s^{\alpha\beta}_i \dot{\epsilon}{\alpha\beta}_i
   \end{align}\right.
 
 Artificial Terms
