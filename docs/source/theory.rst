@@ -62,7 +62,7 @@ The standard artificial viscosity :math:`\Pi_{ij}` is introduced to handle shock
 
 where
 
-..math:: \phi_{ij} = \frac{\bar{h}_{ij}v_{ij} \cdot x_{ij}}{\left\| x_{ij} \right\|^2 + 0.1 \bar{h}^2_{ij}}
+.. math:: \phi_{ij} = \frac{\bar{h}_{ij}v_{ij} \cdot x_{ij}}{\left\| x_{ij} \right\|^2 + 0.1 \bar{h}^2_{ij}}
 
 Strength Model
 --------------
