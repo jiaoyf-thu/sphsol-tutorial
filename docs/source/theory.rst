@@ -70,7 +70,7 @@ The artificial stress :math:`\zeta_{ij}` is also implemented to suppress the pos
 
 where the tensor :math:`R_i` represent a local measure of tension in principal axes,
 
-.. math:: R_i = \frac{-0.2}{\rho_i} 
+.. math:: R_i = -\frac{0.2}{\rho_i} 
 
 Strength Model
 --------------
