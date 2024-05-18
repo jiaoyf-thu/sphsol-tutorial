@@ -47,7 +47,7 @@ where :math:`\sigma=-pI+s` is the stress tensor, :math:`\dot{\epsilon}=\tfrac{1}
       v_{ij} \cdot \nabla_i W_{ij} + \frac{1}{\rho_i} s_i:\dot{\epsilon}_i
   \end{align}\right.
 
-where :math:`{\color{blue}\Pi_{ij}}` is the artificial viscosity and :math:`\zeta_{ij}` is the artificial stress.
+where :math:`{\color{blue}\Pi_{ij}}` is the artificial viscosity and :math:`{\color{red}\zeta_{ij}}` is the artificial stress.
 
 Artificial Terms
 ----------------
