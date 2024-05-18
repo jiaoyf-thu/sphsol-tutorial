@@ -1,11 +1,8 @@
 Theory
 ======
 
-Smoothed Particle Hydrodynamics
--------------------------------
-
 SPH Approximation
-^^^^^^^^^^^^^^^^^
+-----------------
 
 The key idea of the smoothed particle hydrodynamics (SPH) method is to approximate any field :math:`f(x)` using a smoothing kernel :math:`W(r)`,
 
@@ -26,7 +23,7 @@ The cubic B-spline M4 function has been widely used as the smoothing kernel in t
 where :math:`r=\left \| x_i-x_j \right \| /h`, and :math:`\alpha_d=1/h,15/7\pi h^2,3/2\pi h^3` for dimensions from 1 to 3.
 
 Lagrange Equations
-^^^^^^^^^^^^^^^^^^
+------------------
 
 The Lagrange equations describle the conservation of mass, momentum, and energy,
 
@@ -54,25 +51,22 @@ The equations are then discretized using the above SPH approximation,
 where :math:`\Pi_{ij}` is the artificial viscosity.
 
 Artificial Terms
-^^^^^^^^^^^^^^^^
+----------------
 
 Neighbor Search
-^^^^^^^^^^^^^^^
-
-Time Integration
-^^^^^^^^^^^^^^^^
-
-Physical Models
 ---------------
 
+Time Integration
+----------------
+
 Strength Model
-^^^^^^^^^^^^^^
+--------------
 
 Equation of State
-^^^^^^^^^^^^^^^^^
+-----------------
 
 Damage Model
-^^^^^^^^^^^^
+------------
 
 Self Gravity
-^^^^^^^^^^^^
+------------
