@@ -51,7 +51,7 @@ The equations are then discretized into SPH formulation as,
       v_{ij} \cdot \nabla_i W_{ij} + \frac{1}{\rho_i} s_i:\dot{\epsilon}_i
   \end{align}\right.
 
-where :math:`{\color{blue}\Pi_{ij}}` is the artificial viscosity and :math:`{\color{red}\zeta_{ij}}` is the artificial stress.
+where :math:`\Pi_{ij}` and :math:`\zeta_{ij}` are artificial numerical terms.
 
 Artificial Terms
 ----------------
