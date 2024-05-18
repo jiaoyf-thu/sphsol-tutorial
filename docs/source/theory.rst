@@ -68,6 +68,10 @@ The artificial stress :math:`\zeta_{ij}` is also implemented to suppress the pos
 
 .. math:: \zeta_{ij} = (R_i+R_j) \left(\frac{W(x_{ij})}{W(\langle \Delta x \rangle)}\right)^4
 
+where the tensor :math:`R_i` represent a local measure of tension in principal axes,
+
+.. math:: R_i = \frac{-0.2}{\rho_i} 
+
 Strength Model
 --------------
 
