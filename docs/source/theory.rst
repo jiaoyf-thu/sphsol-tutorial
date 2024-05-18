@@ -45,7 +45,7 @@ The equations are then discretized using the above SPH approximation,
 
   \left\{\begin{align}
     & \frac{\mathrm{d} \rho_i}{\mathrm{d} t} = \rho_i \sum_j \frac{m_j}{\rho_j} (v_i-v_j) \cdot \nabla_i W_{ij} \\
-
+    &
   \end{align}\right.
 
 Artificial Terms
