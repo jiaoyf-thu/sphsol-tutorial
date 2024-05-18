@@ -66,7 +66,7 @@ where
 
 The artificial stress :math:`\zeta_{ij}` is also implemented to suppress the possible tensile instability,
 
-.. math:: \zeta_{ij} = (R_i+R_j) \frac{W_{ij}}{W(\langle \Delta x \rangle)}
+.. math:: \zeta_{ij} = (R_i+R_j) \left(\frac{W(x_{ij})}{W(\langle \Delta x \rangle)}\right)^4
 
 Strength Model
 --------------
