@@ -56,8 +56,9 @@ The standard artificial viscosity :math:`\Pi_{ij}` is introduced to handle shock
 
 .. math::
 
-  \Pi_{ij} = \begin{cases} \frac{-\alpha_\Pi \bar{c}_{ij} \phi_{ij} + \beta_\Pi \phi^2_{ij}}{\bar{\rho}_{ij}} , & v_{ij} \cdot x_{ij} \leq 0 \\
-    0, & v_{ij} \cdot x_{ij} \leq 0 \end{cases}
+  \Pi_{ij} = \left\{\begin{align}
+    & \frac{-\alpha_\Pi \bar{c}_{ij} \phi_{ij} + \beta_\Pi \phi^2_{ij}}{\bar{\rho}_{ij}} , & v_{ij} \cdot x_{ij} \leq 0 \\
+    & 0, & v_{ij} \cdot x_{ij} \leq 0 \end{align}\right.
 
 where
 
