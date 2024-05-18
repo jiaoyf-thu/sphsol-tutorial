@@ -20,7 +20,7 @@ The cubic B-spline M4 function has been widely used as the smoothing kernel, whi
 
 .. math:: W(r) = \frac{1}{6} \alpha_d \times \begin{cases} 4-6r^2+3r^3, & 0\leq r<1 \\ (2-r)^3, & 1\leq r<2\\ 0, & r\geq 2 \end{cases}
 
-where :math:`r=\left \| x_i-x_j \right \| /h`
+where :math:`r=\left \| x_i-x_j \right \| /h`, and :math:`\alpha_d=1/h,15/7\pi h^2,3/2\pi h^3` for dimensions from 1 to 3.
 
 Lagrange Equations
 ^^^^^^^^^^^^^^^^^^
