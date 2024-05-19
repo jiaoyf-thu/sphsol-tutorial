@@ -14,6 +14,7 @@ Learn More
    examples
    theory
    io
+   publications
 
 Contact Us
 ----------
