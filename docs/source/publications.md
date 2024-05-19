@@ -1,5 +1,4 @@
-Publications
-============
+## Publications
 
 The publications listed here are based on the SPHSOL code.
 
