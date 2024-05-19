@@ -44,7 +44,7 @@ The equations are then discretized into SPH formulations,
 .. math:: 
 
   \left\{\begin{align}
-    & \frac{\mathrm{d} \rho_i}{\mathrm{d} t} = \rho_i \sum_j \frac{m_j}{\rho_j} (v_i_j) \cdot \nabla_i W_{ij} \\
+    & \frac{\mathrm{d} \rho_i}{\mathrm{d} t} = \rho_i \sum_j \frac{m_j}{\rho_j} (v_{ij}) \cdot \nabla_i W_{ij} \\
     & \frac{\mathrm{d} v_i}{\mathrm{d} t} = \sum_j m_j \left(\frac{\sigma_i}{\rho^2_i} + \frac{\sigma_j}{\rho^2_j} -
       \Pi_{ij}I + \zeta_{ij} \right) \cdot \nabla_i W_{ij} \\
     & \frac{\mathrm{d} e_i}{\mathrm{d} t} = \frac{1}{2} \sum_j m_j \left(\frac{p_i}{\rho^2_i} + \frac{p_j}{\rho^2_j} + \Pi_{ij} \right) 
