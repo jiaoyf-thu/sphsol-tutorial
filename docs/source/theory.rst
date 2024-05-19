@@ -82,7 +82,7 @@ The XSPH term is optional to apply an averaged speed smoothed by the velocity of
 
 .. math:: \frac{\mathrm{d} x_i}{\mathrm{d} t} = v_i - 0.5 \sum_j \frac{m_j}{\bar{\rho}_{ij}} v_{ij} W_{ij}
 
-Nothe that the linear and angular momentum are still conserved when using the XSPH correction.
+Nothe that the linear and angular momentum are still conserved exactly when using the XSPH correction.
 
 Strength Model
 --------------
