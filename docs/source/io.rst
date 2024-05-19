@@ -91,8 +91,7 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
   OUTPUT_DISTENTION       [B] : 0/1
   OUTPUT_ROTATION         [B] : 0/1
 
-The material parameters are defined in ``Input/2-Materials.txt``, where we have provided some commonly used models for basalt, pumice, nylon, and aluminum.
-The default units are in m-kg-s. You can also define new materials with the format as below.
+The material parameters are defined in ``Input/2-Materials.txt``. We have provided some commonly used models for basalt, pumice, nylon, and aluminum, where the default units are in m-kg-s. You can also add new materials using the template here.
 
 .. code-block:: text
 
@@ -150,4 +149,4 @@ Output
 The particles data are exported to ``Output/Particlesxxxx.csv`` in each output timestep.
 The ``.csv`` files should be easy to visualize (using e.g., `paraview <https://www.paraview.org/>`_) or convert into other data types.
 
-You can also monitor the simulation progress in ``Output/Log.txt`` in real time.
+You can also check the simulation progress in ``Output/Log.txt`` in real time.
