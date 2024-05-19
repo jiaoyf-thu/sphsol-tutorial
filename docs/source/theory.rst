@@ -74,7 +74,7 @@ where
 Artificial Stress
 ^^^^^^^^^^^^^^^^^
 
-The artificial stress :math:`\zeta_{ij}` is also implemented to suppress the possible tensile instability that leads to numerical clumping of particles,
+The artificial stress :math:`\zeta_{ij}` is implemented to suppress the possible tensile instability that leads to numerical clumping of particles,
 
 .. math:: \zeta_{ij} = (\zeta_i+\zeta_j) \left(\frac{W(x_{ij})}{W(\Delta x)}\right)^4
 
