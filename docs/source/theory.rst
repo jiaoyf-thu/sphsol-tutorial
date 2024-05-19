@@ -39,7 +39,7 @@ The Lagrange equations describle the conservation of mass, momentum, and energy,
 
 where :math:`\sigma=-pI+s` is the stress tensor, and :math:`\dot{\epsilon}=\tfrac{1}{2} (\nabla v + (\nabla v)^\top)` is the strain rate.
 
-The equations are then discretized into SPH formulation as,
+The equations are then discretized into SPH formulations,
 
 .. math:: 
 
