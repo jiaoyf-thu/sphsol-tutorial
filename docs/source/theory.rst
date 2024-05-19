@@ -56,6 +56,9 @@ where :math:`v_{ij}=v_i-v_j`. :math:`\Pi_{ij}` and :math:`\zeta_{ij}` are artifi
 Artificial Terms
 ----------------
 
+Artificial Viscosity
+^^^^^^^^^^^^^^^^^^^^
+
 The standard artificial viscosity :math:`\Pi_{ij}` is introduced to handle shocks in SPH, such as particle interpenetration and unphysical oscillations in the pressure field after the shock wave passes,
 
 .. math::
@@ -68,6 +71,9 @@ where
 
 .. math:: \phi_{ij} = \frac{\bar{h}_{ij}v_{ij} \cdot x_{ij}}{\left\| x_{ij} \right\|^2 + 0.1 \bar{h}^2_{ij}}
 
+Artificial Stress
+^^^^^^^^^^^^^^^^^
+
 The artificial stress :math:`\zeta_{ij}` is also implemented to suppress the possible tensile instability that leads to numerical clumping of particles,
 
 .. math:: \zeta_{ij} = (\zeta_i+\zeta_j) \left(\frac{W(x_{ij})}{W(\Delta x)}\right)^4
@@ -77,6 +83,9 @@ where :math:`\Delta x` is the mean particle spacing, and the tensor :math:`\zeta
 .. math:: \zeta_i = -0.2\frac{1}{\rho^2_i} U \mathrm{diag}\left(\max(\sigma_i^A,0), \max(\sigma_i^B,0), \max(\sigma_i^C,0)\right) U^\top
 
 with the eigendecomposition of :math:`\sigma_i` as :math:`U\mathrm{diag}(\sigma_i^A,\sigma_i^B,\sigma_i^C)U^\top`.
+
+XSPH
+^^^^
 
 The XSPH term is optional to apply an averaged speed smoothed by the velocity of neighbor particles. The equation of motion is then modified as,
 
