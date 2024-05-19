@@ -4,7 +4,6 @@ Publications
 The listed publications are based on the SPHSOL code.
 
 .. list-table::
-   :widths: 5 95
    :header-rows: 0
 
    * - [1]
