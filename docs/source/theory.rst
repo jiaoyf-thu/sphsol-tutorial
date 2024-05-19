@@ -78,7 +78,7 @@ where :math:`\Delta x` is the mean particle spacing, and the tensor :math:`\zeta
 
 with the eigendecomposition of :math:`\sigma_i` as :math:`U\mathrm{diag}(\sigma_i^A,\sigma_i^B,\sigma_i^C)U^\top`.
 
-The XSPH term is optional to modify the equation of motion, using an averaged speed smoothed by the velocity of neighbor particles,
+The XSPH term is optional to apply an averaged speed smoothed by the velocity of neighbor particles. The equation of motion is then modified as,
 
 .. math:: \frac{\mathrm{d} x_i}{\mathrm{d} t} = v_i - 0.5 \sum_j \frac{m_j}{\bar{\rho}_{ij}} v_{ij} W_{ij}
 
