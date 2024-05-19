@@ -3,6 +3,6 @@ Publications
 
 The publications listed here are based on the SPHSOL code.
 
-:Nat. Astron:  \Y. Jiao, B. Cheng, Y. Huang, E. Asphaug, B. Gladman, R. Malhotra, P. Michel, Y. Yu, H. Baoyin.\ Asteroid Kamoʻoalewa’s journey from the lunar Giordano Bruno crater to Earth 1:1 resonance. **Nature Astronomy**, 2024. https://www.nature.com/articles/s41550-024-02258-z
+|Nat. Astron| \Y. Jiao, B. Cheng, Y. Huang, E. Asphaug, B. Gladman, R. Malhotra, P. Michel, Y. Yu, H. Baoyin. Asteroid Kamoʻoalewa’s journey from the lunar Giordano Bruno crater to Earth 1:1 resonance. **Nature Astronomy**, 2024. https://www.nature.com/articles/s41550-024-02258-z
 
-:MNRAS:  \Y. Jiao, X. Yan, B. Cheng, H. Baoyin.\ SPH-DEM modeling of hypervelocity impacts on rubble-pile asteroids. **Monthly Notices of the Royal Astronomical Society**, 2023. https://doi.org/10.1093/mnras/stad3888
+|MNRAS| \Y. Jiao, X. Yan, B. Cheng, H. Baoyin. SPH-DEM modeling of hypervelocity impacts on rubble-pile asteroids. **Monthly Notices of the Royal Astronomical Society**, 2023. https://doi.org/10.1093/mnras/stad3888
