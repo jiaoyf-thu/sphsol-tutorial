@@ -92,7 +92,7 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
   OUTPUT_ROTATION         [B] : 0/1
 
 The material parameters are defined in ``Input/2-Materials.txt``, where we have provided some commonly used models for basalt, pumice, nylon, and aluminum.
-The default units are in m-kg-s. Define your material model with the format as below.
+The default units are in m-kg-s. You can also define new materials with the format as below.
 
 .. code-block:: text
 
