@@ -51,7 +51,7 @@ The equations are then discretized into SPH formulations,
       v_{ij} \cdot \nabla_i W_{ij} + \frac{1}{\rho_i} s_i:\dot{\epsilon}_i
   \end{align}\right.
 
-where :math:`v_{ij}=v_i-v_j`, :math:`\Pi_{ij}` and :math:`\zeta_{ij}` are artificial terms.
+where :math:`v_{ij}=v_i-v_j`. :math:`\Pi_{ij}` and :math:`\zeta_{ij}` are artificial terms.
 
 Artificial Terms
 ----------------
