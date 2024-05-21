@@ -118,10 +118,7 @@ A more general pressure-dependent yield criterion is to use the Drucker-Prager m
 
 .. math:: 
 
-  \left\{\begin{align}
-    & Y_i=Y_0+\frac{\mu_i P}{1+\mu_i P/(Y_m-Y_0)) \\
-    & Y_d=\mu_d P
-  \end{align}\right.
+  \left\{\begin{align}  & Y_i=Y_0+\frac{\mu_i P}{1+\mu_i P/(Y_m-Y_0)} \\ & Y_d=\mu_d P \end{align}\right.
 
 Fragmentation Model
 ^^^^^^^^^^^^^^^^^^^
