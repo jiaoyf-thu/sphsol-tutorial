@@ -116,7 +116,12 @@ Drucker-Prager Yield Criterion
 
 A more general pressure-dependent yield criterion is to use the Drucker-Prager model, where the yield strength is given by,
 
-.. math:: \left\{ \begin{align} & Y_i=Y_0+\frac{\mu_i P}{1+\mu_i P/(Y_m-Y_0)) \\ & Y_d=\mu_d P \end{align} \right.
+.. math:: 
+
+  \left\{\begin{align}
+    & Y_i=Y_0+\frac{\mu_i P}{1+\mu_i P/(Y_m-Y_0)) \\
+    & Y_d=\mu_d P
+  \end{align}\right.
 
 Fragmentation Model
 ^^^^^^^^^^^^^^^^^^^
