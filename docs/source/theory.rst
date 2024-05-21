@@ -131,7 +131,7 @@ The scalar damage :math:`D\in[0,1]` is introduced to represent the degree of fra
 
 .. math:: \left\{\begin{align} & p' = p>0 \ ?\ p:(1-D)p \\ & s'=(1-D)s \end{align}\right.
 
-The Weibull distribution is commonly used to describe the number of flaws per unit volume (with  activation threshold lower than :math:`\epsilon`), following :math:`n(\epsilon)=k\epsilon^m`.
+The Weibull distribution is commonly used to describe the number of flaws per unit volume with  activation threshold lower than :math:`\epsilon`, following :math:`n(\epsilon)=k\epsilon^m`.
 
 Equation of State
 -----------------
