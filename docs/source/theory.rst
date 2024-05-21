@@ -96,9 +96,7 @@ Nothe that the linear and angular momentum are still conserved exactly when usin
 Strength Model
 --------------
 
-The elastic perfectly plastic mdoel is used the update the deviatoric stress tensor :math:`s`.
-
-The Hooke's law describes the elastic behavior of solid materials as,
+The elastic perfectly plastic mdoel is used the update the deviatoric stress tensor :math:`s`. The Hooke's law describes the elastic behavior of solid materials as,
 
 .. math:: \frac{\mathrm{d} s}{\mathrm{d} t} = 2G\left( \dot{\epsilon} - \frac{1}{3}\mathrm{Tr}(\dot{\epsilon}I) \right) + s\dot{R}^\top + \dot{R}s
 
