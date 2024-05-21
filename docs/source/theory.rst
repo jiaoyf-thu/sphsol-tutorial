@@ -106,7 +106,7 @@ The yielding criterion is then introduced to model plasticity, with the deviator
 
 .. math:: s'=fs
 
-
+where the factor :math:`f` is computed from :math:`f=\min(Y_0/\sqrt{\tfrac{3}{2}s:s}, 1)`
 
 Equation of State
 -----------------
