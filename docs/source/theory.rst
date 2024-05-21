@@ -143,7 +143,7 @@ The fracture area :math:`A_i` is integrated until fully damaged,
 
 The peak of the fragment size distribution is calculated as :math:`L_m=3(m+3)/(m+2)/A`, and the largest :math:`L_\max=\tfrac{1}{3}(m+2)L_m`. The cumulative number of fragments larger than a given size :math:`L` inside a particel is then,
 
-.. math:: 
+.. math:: F_{\mathrm{cum}}^i(L) = \frac{(m+6)(m+5)(m+4)}{120}\frac{V_{\mathrm{cell}}}{L_{\max}^3}\left(1-\frac{L}{L_{\max}}\right)^m\left[1+m\left(\frac{L}{L_{\max}}\right)+\frac{m(m+1)}{2}\left(\frac{L}{L_{\max}}\right)^2+\frac{m(m+1)(m+2)}{6}\left(\frac{L}{L_{\max}}\right)^3\right]
 
 Equation of State
 -----------------
