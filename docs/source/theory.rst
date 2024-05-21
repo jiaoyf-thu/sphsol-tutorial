@@ -102,6 +102,12 @@ The elastic perfectly plastic mdoel is used the update the deviatoric stress ten
 
 where :math:`G` is the shear modulus, :math:`\dot{R}=\tfrac{1}{2} ((\nabla v)^\top - \nabla v)` is the rotation rate.
 
+The yielding criterion is then introduced to model plasticity, with the deviatoric stress limited by,
+
+.. math:: s'=fs
+
+
+
 Equation of State
 -----------------
 
