@@ -149,7 +149,7 @@ The fracture area :math:`A_i` is integrated until fully damaged,
 
 The peak of the fragment size distribution is calculated as
 
-.. math:: L_m=\frac{3(m+3)}{(m+2)}\frac{1}{A}
+.. math:: L_m=\frac{3(m+3)}{(m+2)}\frac{1}{A_i}
 
 and the largest size as,
 
