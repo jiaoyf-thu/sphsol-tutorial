@@ -151,7 +151,7 @@ The most frequent :math:`L_m` and the largest :math:`L_\max` of the fragment siz
 
 .. math:: L_m=\frac{3(m+3)}{(m+2)}\frac{1}{A_i} ,\ L_\max=\frac{m+2}{3}L_m
 
-The cumulative number of fragments larger than a given size :math:`L` inside a particel is then,
+The cumulative number of fragments larger than a given size :math:`L` inside a particle is then,
 
 .. math::
 
