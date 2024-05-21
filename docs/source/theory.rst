@@ -135,6 +135,8 @@ The Weibull distribution is commonly used to describe the number of flaws per un
 
 .. math:: \frac{\mathrm{d} D^{1/3}}{\mathrm{d} t} = n_{\mathrm{act}} \frac{0.4c_s}{R_i}
 
+where :math:`n_{\mathrm{act}}` is the number of active flaws inside the particle, :math:`c_s` is the sound speed, and :math:`R_i` is the particle radius.
+
 Equation of State
 -----------------
 
