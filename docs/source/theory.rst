@@ -127,7 +127,7 @@ where :math:`Y_0` is the cohesion at zero pressure, :math:`Y_m` is the strength 
 .. math:: Y=(1-D)Y_i+DY_d
 
 Damage and Fragmentation
-^^^^^^^^^^^^^^^^^^^^^^^^
+------------------------
 
 The Grady-Kipp scalar damage :math:`D\in[0,1]` is introduced to represent the degree of fragmentation, with :math:`D=0` being intact, and :math:`D=1` being fully fractured. The failure of solid material leads to a reduction of its strength in tension and shear deformation. The pressure and deviatoric stress are then modified by,
 
