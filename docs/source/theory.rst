@@ -162,6 +162,12 @@ The cumulative number of fragments larger than a given size :math:`L` inside a p
 Equation of State
 -----------------
 
+Tillotson EOS
+^^^^^^^^^^^^^
+
+P-alpha Porosity
+^^^^^^^^^^^^^^^^
+
 Neighbor Search
 ---------------
 
