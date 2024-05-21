@@ -109,7 +109,7 @@ In the simple Von Mises yield criterion, the factor :math:`f` is computed as
 
 .. math:: f=\min\left(Y_0/\sqrt{\tfrac{3}{2}s:s}, 1\right)
 
-where :math:`Y_0` is the material strengh.
+where :math:`Y_0` is the material yield strengh.
 
 Drucker-Prager Yield Criterion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
