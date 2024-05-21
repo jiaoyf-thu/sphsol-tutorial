@@ -106,7 +106,9 @@ The yielding criterion is then introduced to model plasticity, with the deviator
 
 .. math:: s'=fs
 
-where the factor :math:`f` is computed from :math:`f=\min(Y_0/\sqrt{\tfrac{3}{2}s:s}, 1)` in a simple Von Mises yield criterion.
+where the factor :math:`f` is computed from :math:`f=\min(Y_0/\sqrt{\tfrac{3}{2}s:s}, 1)` in a simple Von Mises yield criterion, with a singe strengh parameter :math:`Y_0`.
+
+
 
 Equation of State
 -----------------
