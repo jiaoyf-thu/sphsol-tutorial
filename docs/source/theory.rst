@@ -131,7 +131,7 @@ The scalar damage :math:`D\in[0,1]` is introduced to represent the degree of fra
 
 .. math:: \left\{\begin{align} & p' = p>0 \ ?\ p:(1-D)p \\ & s'=(1-D)s \end{align}\right.
 
-The Weibull distribution is commonly used to describe the number of flaws per unit volume with  activation threshold lower than :math:`\epsilon`, following :math:`n(\epsilon)=k\epsilon^m`. With the particle strain measured as a scalar :math:`\epsilon_i=max(\sigma_i^A,\sigma_i^B,\sigma_i^C)/(1-D_i)E`, where :math:`E` is the elastic modulus, the damage growth is obtained by,
+The Weibull distribution is commonly used to describe the number of flaws per unit volume with  activation threshold lower than :math:`\epsilon`, following :math:`n(\epsilon)=k\epsilon^m`. With the particle strain measured as a scalar :math:`\epsilon_i=max(\sigma_i^A,\sigma_i^B,\sigma_i^C)/(1-D_i)/E`, where :math:`E` is the elastic modulus, the damage growth is obtained by,
 
 .. math:: \frac{\mathrm{d} D^{1/3}_i}{\mathrm{d} t} = n_{\mathrm{act}} \frac{c_g}{R_i}
 
