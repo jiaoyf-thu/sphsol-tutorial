@@ -149,11 +149,11 @@ The fracture area :math:`A_i` is integrated until fully damaged,
 
 The peak of the fragment size distribution is calculated as
 
-.. math:: L_m=3(m+3)/(m+2)/A
+.. math:: L_m=\frac{3(m+3)}{(m+2)}\frac{1}{A}
 
 and the largest size as,
 
-.. math:: L_\max=\tfrac{1}{3}(m+2)L_m
+.. math:: L_\max=\frac{m+2}{3}L_m
 
 The cumulative number of fragments larger than a given size :math:`L` inside a particel is then,
 
