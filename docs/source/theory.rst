@@ -124,8 +124,8 @@ where :math:`Y_0` is the cohesion at zero pressure, :math:`Y_m` is the strength 
 
 .. math:: Y=(1-D)Y_i+DY_d
 
-Fragmentation Model
-^^^^^^^^^^^^^^^^^^^
+Damage and Fragmentation
+^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 
