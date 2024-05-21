@@ -127,7 +127,7 @@ where :math:`Y_0` is the cohesion at zero pressure, :math:`Y_m` is the strength 
 Damage and Fragmentation
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-The scalar damage :math:`D` is introduced to represent the degree of fragmentation, with :math:`D=0` being intact, and :math:`D=1` being fully fractured.
+The scalar damage :math:`D\in[0,1]` is introduced to represent the degree of fragmentation, with :math:`D=0` being intact, and :math:`D=1` being fully fractured. The failure 
 
 Equation of State
 -----------------
