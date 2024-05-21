@@ -96,6 +96,8 @@ Nothe that the linear and angular momentum are still conserved exactly when usin
 Strength Model
 --------------
 
+The elastic perfectly plastic mdoel is used the update the deviatoric stress tensor :math:`s`. 
+
 Equation of State
 -----------------
 
