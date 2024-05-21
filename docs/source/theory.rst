@@ -133,7 +133,11 @@ The scalar damage :math:`D\in[0,1]` is introduced to represent the degree of fra
 
 .. math:: \left\{\begin{align} & p' = p>0 \ ?\ p:(1-D)p \\ & s'=(1-D)s \end{align}\right.
 
-The Weibull distribution is commonly used to describe the number of flaws per unit volume with  activation threshold lower than :math:`\epsilon`, following :math:`n(\epsilon)=k\epsilon^m`. With the particle strain measured as a scalar :math:`\epsilon_i=max(\sigma_i^A,\sigma_i^B,\sigma_i^C)/(1-D_i)/E`, where :math:`E` is the elastic modulus, the damage growth is obtained by,
+The Weibull distribution is commonly used to describe the number of flaws per unit volume with  activation threshold lower than :math:`\epsilon`, following :math:`n(\epsilon)=k\epsilon^m`. With the particle strain measured as a scalar,
+
+.. math:: \epsilon_i=\frac{max(\sigma_i^A,\sigma_i^B,\sigma_i^C)}{(1-D_i)E}
+
+where :math:`E` is the elastic modulus, the damage growth is obtained by,
 
 .. math:: \frac{\mathrm{d} D^{1/3}_i}{\mathrm{d} t} = n_{\mathrm{act}} \frac{c_g}{R_i}
 
@@ -143,7 +147,15 @@ The fracture area :math:`A_i` is integrated until fully damaged,
 
 .. math:: \frac{\mathrm{d} A_i}{\mathrm{d} t} = \frac{(m+2)(m+3)}{2c_g} \left(\frac{8\pi c_g^3 k}{(m+1)(m+2)(m+3)}\right)^{2/3} \epsilon^{2m/3}_i D^{1/3}_i
 
-The peak of the fragment size distribution is calculated as :math:`L_m=3(m+3)/(m+2)/A`, and the largest :math:`L_\max=\tfrac{1}{3}(m+2)L_m`. The cumulative number of fragments larger than a given size :math:`L` inside a particel is then,
+The peak of the fragment size distribution is calculated as
+
+.. math:: L_m=3(m+3)/(m+2)/A
+
+and the largest size as,
+
+.. math:: L_\max=\tfrac{1}{3}(m+2)L_m
+
+The cumulative number of fragments larger than a given size :math:`L` inside a particel is then,
 
 .. math::
 
