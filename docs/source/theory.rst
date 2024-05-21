@@ -131,11 +131,15 @@ The scalar damage :math:`D\in[0,1]` is introduced to represent the degree of fra
 
 .. math:: \left\{\begin{align} & p' = p>0 \ ?\ p:(1-D)p \\ & s'=(1-D)s \end{align}\right.
 
-The Weibull distribution is commonly used to describe the number of flaws per unit volume with  activation threshold lower than :math:`\epsilon`, following :math:`n(\epsilon)=k\epsilon^m`. And the damage growth is obtained by,
+The Weibull distribution is commonly used to describe the number of flaws per unit volume with  activation threshold lower than :math:`\epsilon`, following :math:`n(\epsilon)=k\epsilon^m`. With the particle strain measured as :math:`\epsilon_i^t=max(\sigma_i^A,\sigma_i^B,\sigma_i^C)/(1-D_i)E`, the damage growth is obtained by,
 
 .. math:: \frac{\mathrm{d} D^{1/3}}{\mathrm{d} t} = n_{\mathrm{act}} \frac{c_g}{R_i}
 
 where :math:`n_{\mathrm{act}}` is the number of active flaws inside the particle, :math:`c_g=0.4c_s` is the speed of crack growth, and :math:`R_i` is the particle radius.
+
+The fracture area :math:`A_f` is calculated as,
+
+.. math:: \frac{\mathrm{d} A_f}{\mathrm{d} t} = \frac{(m+2)(m+3)}{2c_g} ()^{2/3} 
 
 Equation of State
 -----------------
