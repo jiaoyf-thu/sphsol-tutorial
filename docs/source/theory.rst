@@ -109,12 +109,14 @@ In the simple Von Mises yield criterion, the factor :math:`f` is computed as
 
 .. math:: f=\min(Y_0/\sqrt{\tfrac{3}{2}s:s}, 1)
 
- a singe strengh parameter :math:`Y_0`.
+where :math:`Y_0` is the material strengh.
 
 Drucker-Prager Yield Criterion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A more general pressure-dependent yield criterion is to use the Drucker-Prager model, where the 
+A more general pressure-dependent yield criterion is to use the Drucker-Prager model, where the yield strength is given by,
+
+.. math:: \left\{ \begin{align} & Y_i=Y_0+\frac{\mu_iP}{1+\mu_iP/(Y_m-Y_)) \\ & Y_d=\mu_dP \end{align}
 
 Fragmentation Model
 ^^^^^^^^^^^^^^^^^^^
