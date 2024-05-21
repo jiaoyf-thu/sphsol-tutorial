@@ -133,9 +133,9 @@ The scalar damage :math:`D\in[0,1]` is introduced to represent the degree of fra
 
 The Weibull distribution is commonly used to describe the number of flaws per unit volume with  activation threshold lower than :math:`\epsilon`, following :math:`n(\epsilon)=k\epsilon^m`. And the damage growth is obtained by,
 
-.. math:: \frac{\mathrm{d} D^{1/3}}{\mathrm{d} t} = n_{\mathrm{act}} \frac{0.4c_s}{R_i}
+.. math:: \frac{\mathrm{d} D^{1/3}}{\mathrm{d} t} = n_{\mathrm{act}} \frac{c_g}{R_i}
 
-where :math:`n_{\mathrm{act}}` is the number of active flaws inside the particle, :math:`c_s` is the sound speed, and :math:`R_i` is the particle radius.
+where :math:`n_{\mathrm{act}}` is the number of active flaws inside the particle, :math:`c_g=0.4c_s` is the speed of crack growth, and :math:`R_i` is the particle radius.
 
 Equation of State
 -----------------
