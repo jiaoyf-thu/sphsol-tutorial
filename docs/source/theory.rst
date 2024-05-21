@@ -102,14 +102,18 @@ The elastic perfectly plastic mdoel is used the update the deviatoric stress ten
 
 where :math:`G` is the shear modulus, :math:`\dot{R}=\tfrac{1}{2} ((\nabla v)^\top - \nabla v)` is the rotation rate.
 
-Von Mises Yield Criterion
-^^^^^^^^^^^^^^^^^^^^^^^^^
-
 The yielding criterion is then introduced to model plasticity, with the deviatoric stress limited by,
 
 .. math:: s'=fs
 
-where the factor :math:`f` is computed from :math:`f=\min(Y_0/\sqrt{\tfrac{3}{2}s:s}, 1)` in a simple Von Mises yield criterion, with a singe strengh parameter :math:`Y_0`.
+Von Mises Yield Criterion
+^^^^^^^^^^^^^^^^^^^^^^^^^
+
+In the simple Von Mises yield criterion, the factor :math:`f` is computed as 
+
+.. math:: f=\min(Y_0/\sqrt{\tfrac{3}{2}s:s}, 1)
+
+ a singe strengh parameter :math:`Y_0`.
 
 Drucker-Prager Yield Criterion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
