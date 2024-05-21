@@ -114,11 +114,13 @@ where :math:`Y_0` is the material strengh.
 Drucker-Prager Yield Criterion
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-A more general pressure-dependent yield criterion is to use the Drucker-Prager model, where the yield strength is given by,
+A more general pressure-dependent yield criterion is to use the Drucker-Prager model. And the yield strength is given by,
 
 .. math:: 
 
   \left\{\begin{align}  & Y_i=Y_0+\frac{\mu_i P}{1+\mu_i P/(Y_m-Y_0)} \\ & Y_d=\mu_d P \end{align}\right.
+
+where :math:`Y_0` is the cohesion at zero pressure, :math:`Y_m` is the strength limit, and :math:`\mu` is the coefficient of internal friction. The subscripts ``i`` and ``d`` denote the intact and damaged materials respectively.
 
 Fragmentation Model
 ^^^^^^^^^^^^^^^^^^^
