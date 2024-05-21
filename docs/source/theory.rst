@@ -129,7 +129,7 @@ Damage and Fragmentation
 
 The scalar damage :math:`D\in[0,1]` is introduced to represent the degree of fragmentation, with :math:`D=0` being intact, and :math:`D=1` being fully fractured. The failure of solid material leads to a reduction of its strength in tension and shear deformation. The pressure and deviatoric stress should be modified by,
 
-.. math:: \left\{ & p' = p>0?p:(1-D)p \\ & s'=(1-D)s \right.
+.. math:: \left\{\begin{align} & p' = p>0?p:(1-D)p \\ & s'=(1-D)s \end{align}\right.
 
 Equation of State
 -----------------
