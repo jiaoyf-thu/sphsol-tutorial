@@ -137,9 +137,11 @@ The Weibull distribution is commonly used to describe the number of flaws per un
 
 where :math:`n_{\mathrm{act}}` is the number of active flaws inside the particle, :math:`c_g=0.4c_s` is the speed of crack growth, and :math:`R_i` is the particle radius.
 
-The fracture area :math:`A_i` is calculated as,
+The fracture area :math:`A_i` is integrated until fully damaged,
 
 .. math:: \frac{\mathrm{d} A_i}{\mathrm{d} t} = \frac{(m+2)(m+3)}{2c_g} \left(\frac{8\pi c_g^3 k}{(m+1)(m+2)(m+3)}\right)^{2/3} \epsilon^{2m/3}_i D^{1/3}_i
+
+The peak of the fragment size distribution is then calculated as :math:`L_m=3(m+3)/(m+2)/A`.
 
 Equation of State
 -----------------
