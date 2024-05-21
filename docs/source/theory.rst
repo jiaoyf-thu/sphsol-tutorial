@@ -37,7 +37,7 @@ The Lagrange equations describle the conservation of mass, momentum, and energy,
     & \dot{e} = \frac{1}{\rho} (\sigma : \dot{\epsilon})
   \end{align}\right.
 
-where :math:`\sigma=-pI+s` is the stress tensor, and :math:`\dot{\epsilon}=\tfrac{1}{2} (\nabla v + (\nabla v)^\top)` is the strain rate.
+where :math:`\sigma=-pI+s` is the stress tensor, and :math:`\dot{\epsilon}=\tfrac{1}{2} ((\nabla v)^\top + \nabla v)` is the strain rate.
 
 The equations are then discretized into SPH formulations,
 
@@ -96,9 +96,13 @@ Nothe that the linear and angular momentum are still conserved exactly when usin
 Strength Model
 --------------
 
-The elastic perfectly plastic mdoel is used the update the deviatoric stress tensor :math:`s`. The Hooke's law describes the elastic behavior of solid materials as,
+The elastic perfectly plastic mdoel is used the update the deviatoric stress tensor :math:`s`.
+
+The Hooke's law describes the elastic behavior of solid materials as,
 
 .. math:: \frac{\mathrm{d} s}{\mathrm{d} t} = 2G\left( \dot{\epsilon} - \frac{1}{3}\mathrm{Tr}(\dot{\epsilon}) \right) + s\dot{R}^\top + \dot{R}s
+
+where :math:`G` is the shear modulus, :math:`\dot{R}=\tfrac{1}{2} ((\nabla v)^\top - \nabla v)`
 
 Equation of State
 -----------------
