@@ -162,6 +162,8 @@ The cumulative number of fragments larger than a given size :math:`L` inside a p
 Equation of State
 -----------------
 
+The pressure :math:`p` is usually expressed as a function of the density :math:`\rho` and specific internal energy :math:`e`.
+
 Tillotson EOS
 ^^^^^^^^^^^^^
 
