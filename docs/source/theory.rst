@@ -100,7 +100,7 @@ The elastic perfectly plastic mdoel is used the update the deviatoric stress ten
 
 The Hooke's law describes the elastic behavior of solid materials as,
 
-.. math:: \frac{\mathrm{d} s}{\mathrm{d} t} = 2G\left( \dot{\epsilon} - \frac{1}{3}\mathrm{Tr}(\dot{\epsilon}) \right) + s\dot{R}^\top + \dot{R}s
+.. math:: \frac{\mathrm{d} s}{\mathrm{d} t} = 2G\left( \dot{\epsilon} - \frac{1}{3}\mathrm{Tr}(\dot{\epsilon}I) \right) + s\dot{R}^\top + \dot{R}s
 
 where :math:`G` is the shear modulus, :math:`\dot{R}=\tfrac{1}{2} ((\nabla v)^\top - \nabla v)` is the rotation rate.
 
