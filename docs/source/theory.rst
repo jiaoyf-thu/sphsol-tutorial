@@ -175,7 +175,7 @@ For hot expanded states with :math:`e>e_{cv}` exceeding the complete vaporizatio
 
 .. math:: p_e = a\rho e + \left[\frac{b\rho e}{1+e/(e_0\eta^2)} + A\mu\exp(-\beta\nu) \right] \exp(-\alpha \nu^2)
 
-The pressure in a partial vaporization regime is given by a linear interpolation as,
+The pressure in a partial vaporization regime is given by the linear interpolation og both phases as,
 
 .. math:: p = \frac{p_e(e-e_{IV}) + p_c(e_{cv}-e)}{e_{CV}-e_{IV}}
 
