@@ -24,7 +24,7 @@ Similarly, the gradient can be approximated as,
 
   \begin{array}{l} \left \langle \nabla \cdot f(x_i) \right \rangle = \sum_j \frac{m_j}{\rho_j} f(x_j) \cdot \nabla_i W_{ij} \end{array}
 
-The cubic B-spline M4 function has been widely used as the smoothing kernel in the astrophsical SPH community, which is also adopted in our code,
+The cubic B-spline M4 function has been widely used as the smoothing kernel in the astrophsical SPH community, which is also adopted in the code,
 
 .. math::
 
@@ -242,5 +242,4 @@ Self Gravity
 Time Integration
 ----------------
 
-The second-order predictor–corrector integration is implemented, 
-
+The second-order predictor–corrector integration is implemented in the code.
