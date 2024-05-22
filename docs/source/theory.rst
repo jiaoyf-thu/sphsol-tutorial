@@ -184,7 +184,9 @@ The pressure in a partial vaporization regime is given by the linear interpolati
 P-alpha Porosity
 ^^^^^^^^^^^^^^^^
 
+The pressure in porous materials is given by the pressure in the solid material :math:`p_s` divided by the distension :math:`\alpha`,
 
+.. math:: p = \frac{1}{\alpha} p_s(rho_s, e)
 
 Neighbor Search
 ---------------
