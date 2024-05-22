@@ -190,7 +190,7 @@ The pressure in porous materials is given by the pressure in the solid material 
 
 In the p-\alpha model, the distension :math:`\alpha` is a function of the pressure,
 
-.. math:: \alpha  = \left\{\begin{align} & \alpha_0, & p \leq p_e \\ & 1+(\alpha_0 - 1)\left(\frac{p_s-p}{p_s-p_e}\right)^2}, & p_e<p<p_s \\ &1, & p \geq p_s \end{align}\right.
+.. math:: \alpha  = \left\{\begin{align} & \alpha_0, & p \leq p_e \\ & 1+(\alpha_0-1)\left(\frac{p_s-p}{p_s-p_e}\right)^2, & p_e<p<p_s \\ &1, & p \geq p_s \end{align}\right.
 
 Neighbor Search
 ---------------
