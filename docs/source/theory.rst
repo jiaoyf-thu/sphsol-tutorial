@@ -6,13 +6,17 @@ SPH Approximation
 
 The key idea of the smoothed particle hydrodynamics (SPH) method is to approximate any field :math:`f(x)` using a smoothing kernel :math:`W(r)`,
 
-.. math:: \begin{array}{l} \left \langle f(x) \right \rangle = \int_{\Omega} f(x')W(x-x',h)dx' \end{array}
+.. math::
+
+  \begin{array}{l} \left \langle f(x) \right \rangle = \int_{\Omega} f(x')W(x-x',h)dx' \end{array}
 
 where :math:`h` is the smoothing length.
 
 Replacing the integral with the sum over all particles, the SPH interpolant is discretized as,
 
-.. math:: \left \langle f(x_i) \right \rangle = \sum_j \frac{m_j}{\rho_j} f(x_j) W_{ij}
+.. math::
+
+  \begin{array}{l} \left \langle f(x_i) \right \rangle = \sum_j \frac{m_j}{\rho_j} f(x_j) W_{ij} \end{array}
 
 Similarly, the gradient can be approximated as,
 
