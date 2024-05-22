@@ -171,7 +171,7 @@ The commonly used Tillotson equation is designed to duplicate the linear shock-p
 
 where :math:`\eta=\rho/\rho_0` and :math:`\mu=\eta-1`, 
 
-.. math:: p_e = a\rho E + \left[\frac{b\rho e}{1+e/(e_0\eta^2)} + A\mu e^{-\beta\nu} \right] e^{-\alpha \nu^2}
+.. math:: p_e = a\rho E + \left[\frac{b\rho e}{1+e/(e_0\eta^2)} + A\mu\exp(-\beta\nu)} \right] \exp(-\alpha \nu^2)
 
 P-alpha Porosity
 ^^^^^^^^^^^^^^^^
