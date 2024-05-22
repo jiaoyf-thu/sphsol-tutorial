@@ -242,12 +242,16 @@ Self Gravity
 Time Integration
 ----------------
 
-The second-order predictor–corrector integration is implemented as,
+The second-order predictor–corrector integration is implemented in the code,
 
 .. math::
 
   \left\{\begin{array}{ll} \tilde{y}_{t+\frac{1}{2}\Delta t} = y_t + \frac{1}{2}\Delta t \frac{\mathrm{d}}{\mathrm{d}t} y_t, &\mathrm{prediction} \\
       y_{t+\Delta t} = y_t + \Delta t \frac{\mathrm{d}}{\mathrm{d}t} \tilde{y}_{t+\frac{1}{2}\Delta t}, &\mathrm{correction} \end{array}\right.
 
+where the timestep :math:`\Delta t` is determined by,
 
+.. math::
+
+  \begin{array}{l} \Delta t = \min_i \left( \frac{h_i}{c_{s,i} + \|v_i\|} \right) \end{array}
 
