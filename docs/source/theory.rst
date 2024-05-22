@@ -186,7 +186,7 @@ P-alpha Porosity
 
 The pressure in porous materials is given by the pressure in the solid material :math:`p_s` divided by the distension :math:`\alpha`,
 
-.. math:: p = \frac{1}{\alpha} p_s(\rho_s, e)
+.. math:: p = \frac{1}{\alpha} p_s(\rho_s, e_s) = \frac{1}{\alpha} p_s(\alpha\rho, e)
 
 Neighbor Search
 ---------------
