@@ -1,6 +1,13 @@
 Theory
 ======
 
+.. raw:: html
+
+  <style>
+    .math {text-align: left !important;}
+    .math.block {text-align: left !important;}
+  </style>
+
 SPH Approximation
 -----------------
 
