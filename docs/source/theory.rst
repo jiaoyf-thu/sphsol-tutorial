@@ -242,7 +242,7 @@ Self Gravity
 Time Integration
 ----------------
 
-The second-order predictor–corrector integration is implemented in the code,
+The second-order predictor–corrector integration regime is implemented in the code,
 
 .. math::
 
