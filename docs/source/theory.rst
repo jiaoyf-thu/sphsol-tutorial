@@ -244,4 +244,10 @@ Time Integration
 
 The second-order predictor–corrector integration is implemented as,
 
-.. math:: \left\{\begin{array}{ll} \tilde{y}(t+\Delta t) = y(t) + \frac{1}{2}\Delta t \frac{\mathrm{d}y}{\mathrm{d}t} (t) \end{array}\right.
+.. math::
+
+  \left\{\begin{array}{l} \tilde{y}(t+\frac{1}{2}\Delta t) = y(t) + \frac{1}{2}\Delta t \frac{\mathrm{d}y}{\mathrm{d}t} (t) \\
+        y(t+\Delat t) = y(t) + \Delta t \frac{\mathrm{d}y}{\mathrm{d}t} (t+\frac{1}{2}\Delta t) \end{array}\right.
+
+
+
