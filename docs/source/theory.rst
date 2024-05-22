@@ -246,8 +246,8 @@ The second-order predictor–corrector integration is implemented as,
 
 .. math::
 
-  \left\{\begin{array}{l} \tilde{y}(t+\frac{1}{2}\Delta t) = y(t) + \frac{1}{2}\Delta t \frac{\mathrm{d}y}{\mathrm{d}t} (t) \\
-        y(t+\Delat t) = y(t) + \Delta t \frac{\mathrm{d}y}{\mathrm{d}t} (t+\frac{1}{2}\Delta t) \end{array}\right.
+  \left\{\begin{array}{l} \tilde{y}(t+\frac{1}{2}\Delta t) = y(t) + \frac{1}{2}\Delta t \frac{\mathrm{d}y(t)}{\mathrm{d}t} \\
+        y(t+\Delat t) = y(t) + \Delta t \frac{\mathrm{d}\tilde{y}(t+\frac{1}{2}\Delta t)}{\mathrm{d}t}  \end{array}\right.
 
 
 
