@@ -167,11 +167,11 @@ Tillotson EOS
 
 The commonly used Tillotson equation is designed to duplicate the linear shock-particle velocity relation at low pressures and to extrapolate to the Thomas-Fermi limit at high pressures. For compressed states, or cold expanded states with the specific energy less than the energy of incipient vaporization, the pressure is obtained by,
 
-.. math:: p_c = \left[a + \frac{b}{1+e/(e_0\eta^2)} \right] \rho E + A\mu  + B\mu^2
+.. math:: p_c = \left[a + \frac{b}{1+e/(e_0\eta^2)} \right] \rho e + A\mu  + B\mu^2
 
 where :math:`\eta=\rho/\rho_0` and :math:`\mu=\eta-1`, 
 
-.. math:: p_e = a\rho E + \left[\frac{b\rho E}{1+e/(e_0\eta^2)} + A\mu e^{-\beta\nu} \right] e^{-\alpha \nu^2}
+.. math:: p_e = a\rho E + \left[\frac{b\rho e}{1+e/(e_0\eta^2)} + A\mu e^{-\beta\nu} \right] e^{-\alpha \nu^2}
 
 P-alpha Porosity
 ^^^^^^^^^^^^^^^^
