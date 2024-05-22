@@ -233,13 +233,10 @@ In the p-alpha model, the distension :math:`\alpha` is a function of the pressur
 
 where :math:`p_e` and :math:`p_s` represent the pressure constants at elastic and solid states.
 
-Neighbor Search
----------------
+K-d Tree
+--------
 
-The balanced k-d tree algorithm is implemented to find neighbors inside the particle radius :math:`R_i`. The complexity is :math:`\mathcal{O}(n\log n)` for both constructing and searching neighbors with the tree.
-
-Self Gravity
-------------
+The balanced k-d tree algorithm with complexity of :math:`\mathcal{O}(n\log n)` is implemented to find particle neighbors and approximate self-gravity.
 
 Time Integration
 ----------------
