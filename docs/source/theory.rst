@@ -198,28 +198,38 @@ The commonly used Tillotson equation is designed to duplicate the linear shock-p
 
 For compressed states, or cold expanded states with the specific energy less than the energy of incipient vaporization :math:`e<e_{iv}`, the pressure :math:`p_c` is obtained by,
 
-.. math:: p_c = \left[a + \frac{b}{1+e/(e_0\eta^2)} \right] \rho e + A\mu  + B\mu^2
+.. math::
+
+  \begin{array}{l} p_c = \left[a + \frac{b}{1+e/(e_0\eta^2)} \right] \rho e + A\mu  + B\mu^2 \end{array}
 
 where :math:`a`, :math:`b`, :math:`A`, :math:`B`, :math:`e_0` are Tillotson parameters, :math:`\eta=\rho/\rho_0`, :math:`\mu=\eta-1`, and :math:`\nu=1/\eta-1`.
 
 For hot expanded states with :math:`e>e_{cv}` exceeding the complete vaporization energy, the pressure :math:`p_e` is,
 
-.. math:: p_e = a\rho e + \left[\frac{b\rho e}{1+e/(e_0\eta^2)} + A\mu\exp(-\beta\nu) \right] \exp(-\alpha \nu^2)
+.. math::
+
+  \begin{array}{l} p_e = a\rho e + \left[\frac{b\rho e}{1+e/(e_0\eta^2)} + A\mu\exp(-\beta\nu) \right] \exp(-\alpha \nu^2) \end{array}
 
 The pressure in a partial vaporization regime is given by the linear interpolation of both phases as,
 
-.. math:: p = \frac{p_e(e-e_{iv}) + p_c(e_{cv}-e)}{e_{cv}-e_{iv}}
+.. math::
+
+  \begin{array}{l} p = \frac{p_e(e-e_{iv}) + p_c(e_{cv}-e)}{e_{cv}-e_{iv}} \end{array}
 
 P-alpha Porosity
 ^^^^^^^^^^^^^^^^
 
 The pressure in porous materials is given by the pressure in the solid material :math:`p_s` divided by the distension :math:`\alpha`,
 
-.. math:: p = \frac{1}{\alpha} p_s(\rho_s, e_s) = \frac{1}{\alpha} p_s(\alpha\rho, e)
+.. math::
+
+  \begin{array}{l} p = \frac{1}{\alpha} p_s(\rho_s, e_s) = \frac{1}{\alpha} p_s(\alpha\rho, e) \end{array}
 
 In the p-alpha model, the distension :math:`\alpha` is a function of the pressure,
 
-.. math:: \alpha = \left\{\begin{array}{ll} \alpha_0, & p \leq p_e \\ 1+(\alpha_0-1)\left(\frac{p_s-p}{p_s-p_e}\right)^2, & p_e < p < p_s \\ 1, & p \geq p_s \end{array}\right.
+.. math::
+
+  \alpha = \left\{\begin{array}{ll} \alpha_0, & p \leq p_e \\ 1+(\alpha_0-1)\left(\frac{p_s-p}{p_s-p_e}\right)^2, & p_e < p < p_s \\ 1, & p \geq p_s \end{array}\right.
 
 where :math:`p_e` and :math:`p_s` represent the pressure constants at elastic and solid states.
 
