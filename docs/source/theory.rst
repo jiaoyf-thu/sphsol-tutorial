@@ -45,7 +45,7 @@ The Lagrange equations describle the conservation of mass, momentum, and energy,
     \dot{e} = \frac{1}{\rho} (\sigma : \dot{\epsilon})
   \end{array}\right.
 
-where :math:`\sigma=-pI+s` is the stress tensor, and :math:`\dot{\epsilon}=\tfrac{1}{2} ((\nabla v)^\top + \nabla v)` is the strain rate.
+where :math:`\sigma=-pI+s` is the stress tensor, and :math:`\dot{\epsilon}=\frac{1}{2} ((\nabla v)^\top + \nabla v)` is the strain rate.
 
 The equations are then discretized into SPH formulations,
 
@@ -118,7 +118,7 @@ The elastic perfectly plastic mdoel is used the update the deviatoric stress ten
 
   \begin{array}{l} \frac{\mathrm{d} s}{\mathrm{d} t} = 2G\left( \dot{\epsilon} - \frac{1}{3}\mathrm{Tr}(\dot{\epsilon})I \right) + s\dot{R}^\top + \dot{R}s \end{array}
 
-where :math:`G` is the shear modulus, :math:`\dot{R}=\tfrac{1}{2} ((\nabla v)^\top - \nabla v)` is the rotation rate. The yielding criterion is then introduced to model plasticity, with the deviatoric stress limited by, 
+where :math:`G` is the shear modulus, :math:`\dot{R}=\frac{1}{2} ((\nabla v)^\top - \nabla v)` is the rotation rate. The yielding criterion is then introduced to model plasticity, with the deviatoric stress limited by, 
 
 .. math:: s'=fs
 
@@ -129,7 +129,7 @@ In the simple Von Mises yield criterion, the factor :math:`f` is computed as
 
 .. math::
 
-  \begin{array}{l} f=\min\left(Y_0/\sqrt{\tfrac{3}{2}s:s}, 1\right) \end{array}
+  \begin{array}{l} f=\min\left(Y_0/\sqrt{\frac{3}{2}s:s}, 1\right) \end{array}
 
 where :math:`Y_0` is the material yield strengh.
 
