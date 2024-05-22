@@ -165,7 +165,9 @@ Equation of State
 Tillotson EOS
 ^^^^^^^^^^^^^
 
-The commonly used Tillotson equation is designed to duplicate the linear shock-particle velocity relation at low pressures and to extrapolate to the Thomas-Fermi limit at high pressures. For compressed states, or cold expanded states with the specific energy less than the energy of incipient vaporization :math:`e<e_{IV}`, the pressure :math:`p_c` is obtained by,
+The commonly used Tillotson equation is designed to duplicate the linear shock-particle velocity relation at low pressures and to extrapolate to the Thomas-Fermi limit at high pressures.
+
+For compressed states, or cold expanded states with the specific energy less than the energy of incipient vaporization :math:`e<e_{IV}`, the pressure :math:`p_c` is obtained by,
 
 .. math:: p_c = \left[a + \frac{b}{1+e/(e_0\eta^2)} \right] \rho e + A\mu  + B\mu^2
 
@@ -181,6 +183,8 @@ The pressure in a partial vaporization regime is given by the linear interpolati
 
 P-alpha Porosity
 ^^^^^^^^^^^^^^^^
+
+
 
 Neighbor Search
 ---------------
