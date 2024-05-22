@@ -11,24 +11,12 @@ version = '1.7'
 
 # -- General configuration
 
-import sphinx.ext.mathjax
-
-mathjax_config = {
-    'TeX': {
-        'Macros': {},
-        'TagSide': 'left',
-        'TagIndent': '0em',
-        'displayAlign': 'left'
-    }
-}
-
 extensions = [
     'sphinx.ext.duration',
     'sphinx.ext.doctest',
     'sphinx.ext.autodoc',
     'sphinx.ext.autosummary',
     'sphinx.ext.intersphinx',
-    'sphinx.ext.mathjax',
 ]
 
 intersphinx_mapping = {
