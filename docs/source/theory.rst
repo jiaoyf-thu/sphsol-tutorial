@@ -236,6 +236,8 @@ where :math:`p_e` and :math:`p_s` represent the pressure constants at elastic an
 Neighbor Search
 ---------------
 
+The k-d tree algorithm is used to find the neighbor particles inside the particle radius :math:`R_i`.
+
 Self Gravity
 ------------
 
