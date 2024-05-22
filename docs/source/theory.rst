@@ -236,7 +236,7 @@ where :math:`p_e` and :math:`p_s` represent the pressure constants at elastic an
 Neighbor Search
 ---------------
 
-The k-d tree algorithm, with complexity of :math:`\mathcal{O}(n\log n)` (for both the construction and neighbor search), is implemented to find neighbors inside the particle radius :math:`R_i`. In the k-d tree, each non-leaf node divides the space into two parts, with the hyperplane perpendicular to the dimension's axis. The ``std::nth_element()`` function is used when spilting the child particles of each node, in order to construct a balanced tree. 
+The balanced k-d tree algorithm is implemented to find neighbors inside the particle radius :math:`R_i`. The complexity is :math:`\mathcal{O}(n\log n)` for both constructing and search neighbors with the tree.
 
 Self Gravity
 ------------
