@@ -127,7 +127,9 @@ Von Mises Yield Criterion
 
 In the simple Von Mises yield criterion, the factor :math:`f` is computed as 
 
-.. math:: f=\min\left(Y_0/\sqrt{\tfrac{3}{2}s:s}, 1\right)
+.. math::
+
+  \begin{array}{l} f=\min\left(Y_0/\sqrt{\tfrac{3}{2}s:s}, 1\right) \end{array}
 
 where :math:`Y_0` is the material yield strengh.
 
@@ -136,7 +138,9 @@ Drucker-Prager Yield Criterion
 
 A more general pressure-dependent yield criterion is to use the Drucker-Prager model. And the yield strength is given by,
 
-.. math:: \left\{\begin{align}  & Y_i=Y_0+\frac{\mu_i p}{1+\mu_i p/(Y_m-Y_0)} \\ & Y_d=\mu_d p \end{align}\right.
+.. math::
+
+  \left\{\begin{array}{l}  Y_i=Y_0+\frac{\mu_i p}{1+\mu_i p/(Y_m-Y_0)} \\ Y_d=\mu_d p \end{array}\right.
 
 where :math:`Y_0` is the cohesion at zero pressure, :math:`Y_m` is the strength limit, and :math:`\mu` is the coefficient of internal friction. The subscripts ``i`` and ``d`` here denote intact and damaged respectively. For partially damaged material, the yield strength is interpolated according to the scalar damage :math:`D`,
 
