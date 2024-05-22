@@ -236,7 +236,7 @@ where :math:`p_e` and :math:`p_s` represent the pressure constants at elastic an
 Neighbor Search
 ---------------
 
-The k-d tree algorithm with complexity of :math:`\mathcal{O}(N\log N)` is used to find neighbors inside the particle radius :math:`R_i`.
+The k-d tree algorithm with complexity of :math:`\mathcal{O}(n\log n)` is used to find neighbors inside the particle radius :math:`R_i`.
 
 Self Gravity
 ------------
