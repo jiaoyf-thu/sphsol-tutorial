@@ -29,7 +29,8 @@ Lagrange Equations
 
 The Lagrange equations describle the conservation of mass, momentum, and energy,
 
-.. math:: :align: left
+.. math::
+  :align: left
 
   \left\{\begin{align}
     & \dot{\rho} + \rho(\nabla\cdot v) = 0 \\
