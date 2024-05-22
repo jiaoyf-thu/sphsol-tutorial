@@ -169,7 +169,7 @@ The commonly used Tillotson equation is designed to duplicate the linear shock-p
 
 .. math:: p_c = \left[a + \frac{b}{1+e/(e_0\eta^2)} \right] \rho e + A\mu  + B\mu^2
 
-where :math:`\eta=\rho/\rho_0`, :math:`\mu=\eta-1`, :math:`\nu=1/\eta-1`. For hot expanded states with :math:`e>e_{cv}`, where :math:`e_{CV}` is the complete vaporization energy,
+where :math:`a`, :math:`b`, :math:`A`, :math:`B`, :math:`e_0` are Tillotson parameters, :math:`\eta=\rho/\rho_0`, :math:`\mu=\eta-1`, and :math:`\nu=1/\eta-1`. For hot expanded states with :math:`e>e_{cv}` exceeding the complete vaporization energy,
 
 .. math:: p_e = a\rho e + \left[\frac{b\rho e}{1+e/(e_0\eta^2)} + A\mu\exp(-\beta\nu) \right] \exp(-\alpha \nu^2)
 
