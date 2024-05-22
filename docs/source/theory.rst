@@ -1,13 +1,6 @@
 Theory
 ======
 
-.. raw:: html
-
-  <style>
-    .math {text-align: left !important;}
-    .math.block {text-align: left !important;}
-  </style>
-
 SPH Approximation
 -----------------
 
@@ -36,7 +29,7 @@ Lagrange Equations
 
 The Lagrange equations describle the conservation of mass, momentum, and energy,
 
-.. math:: 
+.. math:: :align: left
 
   \left\{\begin{align}
     & \dot{\rho} + \rho(\nabla\cdot v) = 0 \\
