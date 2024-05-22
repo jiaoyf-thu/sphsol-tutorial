@@ -129,7 +129,7 @@ In the simple Von Mises yield criterion, the factor :math:`f` is computed as
 
 .. math::
 
-  \begin{array}{l} f=\min\left(\frac{Y_0}{\sqrt{\tfrac{3}{2}s:s}}, 1\right) \end{array}
+  \begin{array}{l} f=\min\left(Y_0/\sqrt{\tfrac{3}{2}s:s}, 1\right) \end{array}
 
 where :math:`Y_0` is the material yield strengh.
 
