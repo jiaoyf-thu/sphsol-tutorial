@@ -86,11 +86,15 @@ Artificial Stress
 
 The artificial stress :math:`\zeta_{ij}` is implemented to suppress the possible tensile instability that leads to numerical clumping of particles,
 
-.. math:: \zeta_{ij} = (\zeta_i+\zeta_j) \left(\frac{W(x_{ij})}{W(\Delta x)}\right)^4
+.. math::
+
+  \begin{array}{l} \zeta_{ij} = (\zeta_i+\zeta_j) \left(\frac{W(x_{ij})}{W(\Delta x)}\right)^4 \end{array}
 
 where :math:`\Delta x` is the mean particle spacing, and the tensor :math:`\zeta_i` represents a local measure of tension in principal axes of the stress :math:`\sigma_i`,
 
-.. math:: \zeta_i = -0.2\frac{1}{\rho^2_i} U \mathrm{diag}\left(\max(\sigma_i^A,0), \max(\sigma_i^B,0), \max(\sigma_i^C,0)\right) U^\top
+.. math::
+
+  \begin{array}{l} \zeta_i = -0.2\frac{1}{\rho^2_i} U \mathrm{diag}\left(\max(\sigma_i^A,0), \max(\sigma_i^B,0), \max(\sigma_i^C,0)\right) U^\top \end{array}
 
 with the eigendecomposition of :math:`\sigma_i` as :math:`U\mathrm{diag}(\sigma_i^A,\sigma_i^B,\sigma_i^C)U^\top`.
 
@@ -99,7 +103,9 @@ XSPH
 
 The XSPH term is optional to apply an averaged speed smoothed by the velocity of neighbor particles. The equation of motion is then modified as,
 
-.. math:: \frac{\mathrm{d} x_i}{\mathrm{d} t} = v_i - 0.5 \sum_j \frac{m_j}{\bar{\rho}_{ij}} v_{ij} W_{ij}
+.. math::
+
+  \begin{array}{l} \frac{\mathrm{d} x_i}{\mathrm{d} t} = v_i - 0.5 \sum_j \frac{m_j}{\bar{\rho}_{ij}} v_{ij} W_{ij} \end{array}
 
 Nothe that the linear and angular momentum are still conserved exactly when using the XSPH correction.
 
@@ -108,7 +114,9 @@ Strength Model
 
 The elastic perfectly plastic mdoel is used the update the deviatoric stress tensor :math:`s`. The Hooke's law describes the linear elastic behavior of solid materials as,
 
-.. math:: \frac{\mathrm{d} s}{\mathrm{d} t} = 2G\left( \dot{\epsilon} - \frac{1}{3}\mathrm{Tr}(\dot{\epsilon}I) \right) + s\dot{R}^\top + \dot{R}s
+.. math::
+
+  \begin{array}{l} \frac{\mathrm{d} s}{\mathrm{d} t} = 2G\left( \dot{\epsilon} - \frac{1}{3}\mathrm{Tr}(\dot{\epsilon}I) \right) + s\dot{R}^\top + \dot{R}s \begin{array}{l} 
 
 where :math:`G` is the shear modulus, :math:`\dot{R}=\tfrac{1}{2} ((\nabla v)^\top - \nabla v)` is the rotation rate. The yielding criterion is then introduced to model plasticity, with the deviatoric stress limited by, 
 
