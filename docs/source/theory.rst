@@ -151,7 +151,9 @@ Damage and Fragmentation
 
 The Grady-Kipp scalar damage :math:`D\in[0,1]` is introduced to represent the degree of fragmentation, with :math:`D=0` being intact, and :math:`D=1` being fully fractured. The failure of solid material leads to a reduction of its strength in tension and shear deformation. The pressure and deviatoric stress are then modified by,
 
-.. math:: \left\{\begin{align} & p' = p>0 \ ?\ p:(1-D)p \\ & s'=(1-D)s \end{align}\right.
+.. math::
+
+  \left\{\begin{array}{l} p' = p>0 \ ?\ p:(1-D)p \\ s'=(1-D)s \end{array}\right.
 
 The Weibull distribution is commonly used to describe the number of flaws per unit volume with  activation threshold lower than :math:`\epsilon`, following :math:`n(\epsilon)=k\epsilon^m`. With the particle strain measured as a scalar,
 
