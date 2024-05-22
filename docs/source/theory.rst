@@ -20,11 +20,15 @@ Replacing the integral with the sum over all particles, the SPH interpolant is d
 
 Similarly, the gradient can be approximated as,
 
-.. math:: \left \langle \nabla \cdot f(x_i) \right \rangle = \sum_j \frac{m_j}{\rho_j} f(x_j) \cdot \nabla_i W_{ij}
+.. math::
+
+  \left \langle \nabla \cdot f(x_i) \right \rangle = \sum_j \frac{m_j}{\rho_j} f(x_j) \cdot \nabla_i W_{ij}
 
 The cubic B-spline M4 function has been widely used as the smoothing kernel in the astrophsical SPH community, which is also adopted in our code,
 
-.. math:: W(r) = \frac{1}{6} \alpha_d \times \left\{\begin{array}{ll} 4-6r^2+3r^3, & 0\leq r<1 \\ (2-r)^3, & 1\leq r \leq 2\\ 0, & r>2 \end{array}\right.
+.. math::
+
+  W(r) = \frac{1}{6} \alpha_d \times \left\{\begin{array}{ll} 4-6r^2+3r^3, & 0\leq r<1 \\ (2-r)^3, & 1\leq r \leq 2\\ 0, & r>2 \end{array}\right.
 
 where :math:`r=\left \| x_i-x_j \right \| /h`, and :math:`\alpha_d=3/(2\pi h^3)` in the 3-dimensional case.
 
@@ -35,10 +39,10 @@ The Lagrange equations describle the conservation of mass, momentum, and energy,
 
 .. math::
 
-  \left\{\begin{align}
-    & \dot{\rho} + \rho(\nabla\cdot v) = 0 \\
-    & \dot{v} = \frac{1}{\rho} (\nabla \cdot \sigma) +g \\
-    & \dot{e} = \frac{1}{\rho} (\sigma : \dot{\epsilon})
+  \left\{\begin{array}{l}
+    \dot{\rho} + \rho(\nabla\cdot v) = 0 \\
+    \dot{v} = \frac{1}{\rho} (\nabla \cdot \sigma) +g \\
+    \dot{e} = \frac{1}{\rho} (\sigma : \dot{\epsilon})
   \end{align}\right.
 
 where :math:`\sigma=-pI+s` is the stress tensor, and :math:`\dot{\epsilon}=\tfrac{1}{2} ((\nabla v)^\top + \nabla v)` is the strain rate.
