@@ -249,7 +249,7 @@ The second-order predictor–corrector integration is implemented in the code,
   \left\{\begin{array}{ll} \tilde{y}_{t+\frac{1}{2}\Delta t} = y_t + \frac{1}{2}\Delta t \frac{\mathrm{d}}{\mathrm{d}t} y_t, &\mathrm{prediction} \\
       y_{t+\Delta t} = y_t + \Delta t \frac{\mathrm{d}}{\mathrm{d}t} \tilde{y}_{t+\frac{1}{2}\Delta t}, &\mathrm{correction} \end{array}\right.
 
-where the timestep :math:`\Delta t` is determined by the Courant condition,
+where the timestep :math:`\Delta t` is determined by the Courant-Friedrichs-Lewy(CFL) condition,
 
 .. math::
 
