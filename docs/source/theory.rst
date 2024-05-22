@@ -118,9 +118,7 @@ Drucker-Prager Yield Criterion
 
 A more general pressure-dependent yield criterion is to use the Drucker-Prager model. And the yield strength is given by,
 
-.. math:: 
-
-  \left\{\begin{align}  & Y_i=Y_0+\frac{\mu_i p}{1+\mu_i p/(Y_m-Y_0)} \\ & Y_d=\mu_d p \end{align}\right.
+.. math:: \left\{\begin{align}  & Y_i=Y_0+\frac{\mu_i p}{1+\mu_i p/(Y_m-Y_0)} \\ & Y_d=\mu_d p \end{align}\right.
 
 where :math:`Y_0` is the cohesion at zero pressure, :math:`Y_m` is the strength limit, and :math:`\mu` is the coefficient of internal friction. The subscripts ``i`` and ``d`` here denote intact and damaged respectively. For partially damaged material, the yield strength is interpolated according to the scalar damage :math:`D`,
 
@@ -190,7 +188,7 @@ The pressure in porous materials is given by the pressure in the solid material 
 
 In the p-\alpha model, the distension :math:`\alpha` is a function of the pressure,
 
-.. math:: \alpha  = \left\{\begin{align} & \alpha_0, & p \leq p_e \\ & 1+(\alpha_0-1)\left(\frac{p_s-p}{p_s-p_e}\right)^2, & p_e<p<p_s \\ &1, & p \geq p_s \end{align}\right.
+.. math:: \alpha = \left\{ \begin{align} &\alpha_0, &p \leq p_e \\ & 1+(\alpha_0-1)\left(\frac{p_s-p}{p_s-p_e}\right)^2, & p_e<p<p_s \\ &1, &p \geq p_s \end{align}\right.
 
 Neighbor Search
 ---------------
