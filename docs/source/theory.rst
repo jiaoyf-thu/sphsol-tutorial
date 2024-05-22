@@ -159,7 +159,7 @@ The Weibull distribution is commonly used to describe the number of flaws per un
 
 .. math::
 
-  \begin{array}{l} \epsilon=\frac{max(\sigma^A,\sigma^B,\sigma^C)}{(1-D)E} \end{array}
+  \begin{array}{l} \epsilon_i=\frac{max(\sigma^A_i,\sigma^B_i,\sigma^C_i)}{(1-D_i)E} \end{array}
 
 where :math:`E` is the elastic modulus, the damage growth is obtained by,
 
