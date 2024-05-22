@@ -51,13 +51,13 @@ The equations are then discretized into SPH formulations,
 
 .. math:: 
 
-  \left\{\begin{align}
-    & \frac{\mathrm{d} \rho_i}{\mathrm{d} t} = \rho_i \sum_j \frac{m_j}{\rho_j} (v_{ij}) \cdot \nabla_i W_{ij} \\
-    & \frac{\mathrm{d} v_i}{\mathrm{d} t} = \sum_j m_j \left(\frac{\sigma_i}{\rho^2_i} + \frac{\sigma_j}{\rho^2_j} -
-      \Pi_{ij}I + \zeta_{ij} \right) \cdot \nabla_i W_{ij} \\
-    & \frac{\mathrm{d} e_i}{\mathrm{d} t} = \frac{1}{2} \sum_j m_j \left(\frac{p_i}{\rho^2_i} + \frac{p_j}{\rho^2_j} + \Pi_{ij} \right) 
-      v_{ij} \cdot \nabla_i W_{ij} + \frac{1}{\rho_i} s_i:\dot{\epsilon}_i
-  \end{align}\right.
+  \left\{\begin{array}{l}
+    \frac{\mathrm{d} \rho_i}{\mathrm{d} t} = \rho_i \sum_j \frac{m_j}{\rho_j} (v_{ij}) \cdot \nabla_i W_{ij} \\
+    \frac{\mathrm{d} v_i}{\mathrm{d} t} = \sum_j m_j \left(\frac{\sigma_i}{\rho^2_i} + \frac{\sigma_j}{\rho^2_j} -
+        \Pi_{ij}I + \zeta_{ij} \right) \cdot \nabla_i W_{ij} \\
+    \frac{\mathrm{d} e_i}{\mathrm{d} t} = \frac{1}{2} \sum_j m_j \left(\frac{p_i}{\rho^2_i} + \frac{p_j}{\rho^2_j} + \Pi_{ij} \right) 
+        v_{ij} \cdot \nabla_i W_{ij} + \frac{1}{\rho_i} s_i:\dot{\epsilon}_i
+  \end{array}\right.
 
 where :math:`v_{ij}=v_i-v_j`. :math:`\Pi_{ij}` and :math:`\zeta_{ij}` are artificial terms.
 
@@ -71,9 +71,9 @@ The standard artificial viscosity :math:`\Pi_{ij}` is introduced to handle shock
 
 .. math::
 
-  \Pi_{ij} = \left\{\begin{align}
-    & \frac{-\alpha_\Pi \bar{c}_{ij} \phi_{ij} + \beta_\Pi \phi^2_{ij}}{\bar{\rho}_{ij}} , & v_{ij} \cdot x_{ij} < 0 \\
-    & 0, & v_{ij} \cdot x_{ij} \geq 0 \end{align}\right.
+  \Pi_{ij} = \left\{\begin{array}{ll}
+    \frac{-\alpha_\Pi \bar{c}_{ij} \phi_{ij} + \beta_\Pi \phi^2_{ij}}{\bar{\rho}_{ij}} , & v_{ij} \cdot x_{ij} < 0 \\
+    0, & v_{ij} \cdot x_{ij} \geq 0 \end{array}\right.
 
 where
 
