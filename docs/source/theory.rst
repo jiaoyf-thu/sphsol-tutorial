@@ -241,3 +241,6 @@ Self Gravity
 
 Time Integration
 ----------------
+
+The second-order predictor–corrector integration is implemented, 
+
