@@ -236,13 +236,13 @@ where :math:`p_e` and :math:`p_s` represent the pressure constants at elastic an
 K-d Tree
 --------
 
-The balanced k-d tree with complexity of :math:`\mathcal{O}(n\log n)` is implemented to find particle neighbors and approximate self-gravitation. Each tree node includes a particle and two child nodes that are spilted by a hyperplane. When considering self-gravity, the monopole and dipole are also calculated for the nodes,
+The balanced k-d tree with complexity of :math:`\mathcal{O}(n\log n)` is implemented to find particle neighbors and approximate self-gravitation. Each tree node includes one SPH particle and two child nodes that are spilted by a hyperplane. When considering self-gravity, the monopole and dipole are also calculated for the nodes,
 
 .. math::
 
   \left\{\begin{array}{l} M^{\underline{0}}=\sum_i m_i \\ M^{\underline{1}}=\sum_i m_i x_i \end{array}\right.
 
-The Barnes-Hut algorithm is then used to approximate the gravitational forces between all particles, with a criterion given by,
+The Barnes-Hut algorithm is then used to approximate the gravitational forces between all particles, with the criterion given by,
 
 .. math::
 
