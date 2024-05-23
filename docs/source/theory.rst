@@ -236,7 +236,7 @@ where :math:`p_e` and :math:`p_s` represent the pressure constants at elastic an
 K-d Tree
 --------
 
-The binary k-d tree is implemented to find neighbors within the particle radius for SPH interpolation. Starting from the root node, each tree node includes one SPH particle and two child nodes that are spilted by a hyperplane. Note that the complexity is :math:`\mathcal{O}(n\log n)` for both constructing a balanced tree , and searching for all pairs of neighbor particles with the tree.
+The binary k-d tree is implemented to find neighbors within the particle radius for SPH interpolation. Starting from the root node, each tree node includes one SPH particle and two child nodes that are spilted by a hyperplane. Note that the complexity is :math:`\mathcal{O}(n\log n)` both for constructing a balanced tree and searching for all pairs of neighbor particles with the tree.
 
 When considering self-gravity, the monopole and dipole are also calculated for the same tree nodes,
 
