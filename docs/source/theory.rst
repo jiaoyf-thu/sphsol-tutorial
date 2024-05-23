@@ -236,7 +236,9 @@ where :math:`p_e` and :math:`p_s` represent the pressure constants at elastic an
 K-d Tree
 --------
 
-The balanced k-d tree with complexity of :math:`\mathcal{O}(n\log n)` is implemented to find particle neighbors and approximate self-gravitation. Each tree node includes a particle and two child nodes that are spilted by a hyperplane. When considering self-gravity, the monopole :math:`` and dipole :math:`` of the child particles are also calculated.
+The balanced k-d tree with complexity of :math:`\mathcal{O}(n\log n)` is implemented to find particle neighbors and approximate self-gravitation. Each tree node includes a particle and two child nodes that are spilted by a hyperplane. 
+
+When considering self-gravity, the monopole :math:`` and dipole :math:`` of the node's child particles are also calculated,
 
 .. math::
 
