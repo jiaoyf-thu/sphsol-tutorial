@@ -34,7 +34,10 @@ where :math:`r=\left \| x_i-x_j \right \| /h`, and :math:`\alpha_d=3/(2\pi h^3)`
 
 .. Note::
 
-  Suppose a simple cubic distribution with mean particle spacing of :math:`\Delta x`, the initial smoothing length is taken as :math:`h=1.2\Delta x` in the code. The particle radius is thus :math:`2h=2.4\Delta x` for the cubic kernel here. Therefore, each SPH particle has ~57 neighbor particles.
+  Suppose a simple cubic distribution with mean particle spacing of :math:`\Delta x`, 
+  the initial smoothing length is taken as :math:`h=1.2\Delta x` in the code. 
+  The particle radius is thus :math:`2h=2.4\Delta x` for the cubic kernel here. 
+  Therefore, each SPH particle has ~57 neighbor particles.
 
 Lagrange Equations
 ------------------
