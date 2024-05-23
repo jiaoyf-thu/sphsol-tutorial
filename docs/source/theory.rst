@@ -242,7 +242,7 @@ The balanced k-d tree with complexity of :math:`\mathcal{O}(n\log n)` is impleme
 
   \begin{array}{l} \frac{l_n}{r_n} < \theta \end{array}
 
-where :math:`r_n` is the distance between a particle and the node, and :math:`\theta` is the open angle.
+where :math:`r_n` is the distance between a SPH particle and the node, and :math:`\theta` is the open angle. In that case, the node's gravitational force acting on the SPH particle can be approximated as a point mass at the node's center of mass.
 
 Time Integration
 ----------------
