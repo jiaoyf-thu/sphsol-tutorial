@@ -248,13 +248,7 @@ The binary k-d tree is implemented to search for neighbors within the particle r
 .. image:: ./kdtree.png
    :width: 800
 
-When considering self-gravity, the monopole and dipole are also calculated for the same tree nodes,
-
-.. math::
-
-  \left\{\begin{array}{l} M^{\underline{0}}=\sum_i m_i \\ M^{\underline{1}}=\sum_i m_i x_i \end{array}\right.
-
-The Barnes-Hut algorithm is then used to approximate the gravitational forces between all particles, with the criterion given by,
+When considering self-gravity, the monopole and quadpole terms are also calculated for the same tree nodes. The Barnes-Hut algorithm is then used to approximate the gravitational forces between all particles, with the criterion given by,
 
 .. math::
 
