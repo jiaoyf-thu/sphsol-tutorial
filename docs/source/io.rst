@@ -44,7 +44,7 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
   DAMPING_TIME            [F] : DAMPING_TIME
   SYMMETRIC_BOUNDARY      [S] : PLANE/NONE
   PLANE_DEFINE            [F] : A,B,C,D
-  STABLIZATION            [B] : 0/1
+  RELAX                   [B] : 0/1
   LATE_STAGE              [B] : 0/1
   // --------------------------------------------------------------------------------
   // SETTINGS: LIMIT
