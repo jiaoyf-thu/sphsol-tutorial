@@ -105,17 +105,6 @@ where :math:`\Delta x` is the mean particle spacing, and the tensor :math:`\zeta
 
 with the eigendecomposition of :math:`\sigma_i` as :math:`U\mathrm{diag}(\sigma_i^A,\sigma_i^B,\sigma_i^C)U^\top`.
 
-XSPH
-^^^^
-
-The XSPH term is optional to apply an averaged speed smoothed by the velocity of neighbor particles. The equation of motion is then modified as,
-
-.. math::
-
-  \begin{array}{l} \frac{\mathrm{d} x_i}{\mathrm{d} t} = v_i - 0.5 \sum_j \frac{m_j}{\bar{\rho}_{ij}} v_{ij} W_{ij} \end{array}
-
-Nothe that the linear and angular momentum are still conserved exactly when using the XSPH correction.
-
 Correction Tensor
 ^^^^^^^^^^^^^^^^^
 
@@ -130,6 +119,17 @@ where the correction tensor is given by,
 .. math::
 
   \begin{array}{l} C_i = \left( -\sum_j \frac{m_j}{\rho_j} x_{ij} \otimes \nabla_i W_{ij} \right)^{-1} \end{array}
+
+XSPH
+^^^^
+
+The XSPH term is optional to apply an averaged speed smoothed by the velocity of neighbor particles. The equation of motion is then modified as,
+
+.. math::
+
+  \begin{array}{l} \frac{\mathrm{d} x_i}{\mathrm{d} t} = v_i - 0.5 \sum_j \frac{m_j}{\bar{\rho}_{ij}} v_{ij} W_{ij} \end{array}
+
+Nothe that the linear and angular momentum are still conserved exactly when using the XSPH correction.
 
 Strength Model
 --------------
