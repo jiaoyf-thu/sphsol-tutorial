@@ -29,7 +29,7 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
   // --------------------------------------------------------------------------------
   // SETTINGS: SOLVER
   // --------------------------------------------------------------------------------
-  KERNEL                  [S] : CUBIC_SPLINE
+  INTEGRATOR              [S] : LEAP_FROG/PREDICT_CORRECT
   ARTIFICIAL_VISCOSITY    [S] : STANDARD/NONE
   ARTIFICIAL_HEAT         [S] : STANDARD/NONE
   ARTIFICIAL_STRESS       [S] : STANDARD/NONE
