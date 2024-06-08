@@ -274,12 +274,13 @@ where :math:`l_n` is the edge length of the node, :math:`r` is the distance betw
 Time Integration
 ----------------
 
-The second-order predictor–corrector integration regime is implemented in the code,
+The second-order leapfrog integration regime is implemented in the code,
 
 .. math::
 
-  \left\{\begin{array}{l} \tilde{y}_{t+\frac{1}{2}\Delta t} = y_t + \frac{1}{2}\Delta t \frac{\mathrm{d}}{\mathrm{d}t} y_t \\
-      y_{t+\Delta t} = y_t + \Delta t \frac{\mathrm{d}}{\mathrm{d}t} \tilde{y}_{t+\frac{1}{2}\Delta t} \end{array}\right.
+  \left\{\begin{array}{l} v_{i+1/2}&=v_{i}+a_{i}{\frac {\Delta t}{2}} \\
+      x_{i+1}&=x_{i}+v_{i+1/2}\Delta t \\
+      v_{i+1}&=v_{i+1/2}+a_{i+1}{\frac {\Delta t}{2}} \end{array}\right.
 
 where the timestep :math:`\Delta t` is determined by the Courant-Friedrichs-Lewy (CFL) condition,
 
