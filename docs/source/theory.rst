@@ -278,9 +278,9 @@ The second-order leapfrog integration regime is implemented in the code,
 
 .. math::
 
-  \left\{\begin{array}{l} v_{i+1/2}&=v_{i}+a_{i}{\frac {\Delta t}{2}} \\
-      x_{i+1}&=x_{i}+v_{i+1/2}\Delta t \\
-      v_{i+1}&=v_{i+1/2}+a_{i+1}{\frac {\Delta t}{2}} \end{array}\right.
+  \left\{\begin{array}{l} v_{i+\frac{1}{2}}&=v_{i}+a_{i}{\frac {\Delta t}{2}} \\
+      x_{i+1}&=x_{i}+v_{i+\frac{1}{2}}\Delta t \\
+      v_{i+1}&=v_{i+\frac{1}{2}}+a_{i+1}{\frac {\Delta t}{2}} \end{array}\right.
 
 where the timestep :math:`\Delta t` is determined by the Courant-Friedrichs-Lewy (CFL) condition,
 
