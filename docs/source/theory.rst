@@ -119,7 +119,17 @@ Nothe that the linear and angular momentum are still conserved exactly when usin
 Correction Tensor
 ^^^^^^^^^^^^^^^^^
 
-The correction tensor :math:`C_i` is 
+The correction tensor :math:`C_i` is used to increase the consistency of velocity gradient to the first order, in order to conserve the system's angular momentum. The corrected velocity gradient is then,
+
+.. math::
+
+  \begin{array}{l} \nabla v_i = \sum_j \frac{m_j}{\rho_j} v_{ij} \otimes (C_i \nabla_i W_{ij}) \end{array}
+
+where the correction tensor is given by,
+
+.. math::
+
+  \begin{array}{l} C_i = \left( -\sum_j \frac{m_j}{\rho_j} x_{ij} \otimes \nabla_i W_{ij} \right)^{-1} \end{array}
 
 Strength Model
 --------------
