@@ -119,7 +119,7 @@ Nothe that the linear and angular momentum are still conserved exactly when usin
 Correction Tensor
 ^^^^^^^^^^^^^^^^^
 
-The correction tensor :math:`C_i` is used to increase the consistency of velocity gradient to the first order, in order to conserve the system's angular momentum. The corrected velocity gradient is then,
+The correction tensor :math:`C_i` is used to increase the consistency of velocity gradient to the first order, in order to conserve the angular momentum of the particle system. The corrected velocity gradient is then,
 
 .. math::
 
