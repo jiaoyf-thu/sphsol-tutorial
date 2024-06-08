@@ -35,7 +35,7 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
   ARTIFICIAL_STRESS       [S] : STANDARD/NONE
   XSPH                    [S] : STANDARD/NONE
   DENSITY_UPDATE          [S] : CONTINUOUS_DENSITY/DENSITY_SUMMATION
-  NEIGHBOR_SEARCH         [S] : KDTREE/GRID/ALL_PAIR
+  NEIGHBOR_SEARCH         [S] : KDTREE/GRID/ALL_PAIR/HYBRID
   GRAVITY                 [S] : CONST/SPHERE/SELF_GRAVITY/NONE
   GRAVITY_CONST           [F] : GX,GY,GZ
   GRAVITY_SPHERE          [F] : X0,Y0,Z0,R,RHO
