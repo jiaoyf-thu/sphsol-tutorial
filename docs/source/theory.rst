@@ -116,6 +116,11 @@ The XSPH term is optional to apply an averaged speed smoothed by the velocity of
 
 Nothe that the linear and angular momentum are still conserved exactly when using the XSPH correction.
 
+Correction Tensor
+^^^^^^^^^^^^^^^^^
+
+The correction tensor :math:`C_i` is 
+
 Strength Model
 --------------
 
@@ -188,7 +193,7 @@ The most frequent :math:`L_m` and the largest :math:`L_\max` of the fragment siz
 
   \begin{array}{l} L_m=\frac{3(m+3)}{(m+2)}\frac{1}{A_i} , & L_\max=\frac{m+2}{3}L_m \end{array}
 
-The cumulative number of fragments larger than a given size :math:`L` inside a particle is then,
+The cumulative number of fragments larger than a given size :math:`L` inside a particle is then given by,
 
 .. math::
 
