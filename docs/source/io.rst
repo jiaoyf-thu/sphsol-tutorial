@@ -40,7 +40,7 @@ There are 4 datatypes: ``I`` for integers, ``F`` for floats in scientific notati
   GRAVITY_CONST           [F] : GX,GY,GZ
   GRAVITY_SPHERE          [F] : X0,Y0,Z0,R,RHO
   ROTATION                [S] : TARGET/NONE
-  ROTATION_TARGET         [F] : RX0,RY0,RZ0,VX0,VY0,VZ0,WX,WY,WZ
+  ROTATION_TARGET         [F] : RX0,RY0,RZ0,WX,WY,WZ
   DAMPING_TIME            [F] : DAMPING_TIME
   SYMMETRIC_BOUNDARY      [S] : PLANE/NONE
   PLANE_DEFINE            [F] : A,B,C,D
