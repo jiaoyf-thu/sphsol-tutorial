@@ -286,5 +286,5 @@ where the timestep :math:`\Delta t` is determined by the Courant-Friedrichs-Lewy
 
 .. math::
 
-  \begin{array}{l} \Delta t = \min_i \left(\frac{0.2 h_i}{c_{s,i} + \|v_i\|} \right) \end{array}
+  \begin{array}{l} \Delta t = \min_i \left(\frac{0.2 h_i}{c_s + \|v_i\|} \right) \end{array}
 
