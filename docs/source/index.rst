@@ -4,6 +4,7 @@ Welcome to SPHSOL
 .. warning:: This project is under development.
 
 **SPHSOL** is an open-source C++ code for simulating the impact processes of planetary bodies, using the smoothed particle hydrodynamics method.
+We have published a public release of version 1.7 on https://github.com/jiaoyf-thu/sphsol-release. Feel free to make use of it!
 
 Learn More
 ----------
