@@ -275,12 +275,12 @@ The gravatational softening kernel $\phi(r,h)$ is necessary to correct the inter
 
 .. math::
 
-\phi'(r, h) =
-  \left\{\begin{array}{ll}
-    \dfrac{1}{h^{2}}\!\left(\dfrac{4}{3}q - \dfrac{6}{5}q^{3} + \dfrac{1}{2}q^{4}\right), & 0 \le q < 1\\
-    \dfrac{1}{h^{2}}\!\left(\dfrac{8}{3}q - 3q^{2} + \dfrac{6}{5}q^{3} - \dfrac{1}{6}q^{4} - \dfrac{1}{15q^{2}}\right), & 1 \le q < 2\\
-    \dfrac{1}{r^{2}}, & q \ge 2
-  \end{array}\right.
+  \phi'(r, h) =
+    \left\{\begin{array}{ll}
+      \dfrac{1}{h^{2}}\!\left(\dfrac{4}{3}q - \dfrac{6}{5}q^{3} + \dfrac{1}{2}q^{4}\right), & 0 \le q < 1\\
+      \dfrac{1}{h^{2}}\!\left(\dfrac{8}{3}q - 3q^{2} + \dfrac{6}{5}q^{3} - \dfrac{1}{6}q^{4} - \dfrac{1}{15q^{2}}\right), & 1 \le q < 2\\
+      \dfrac{1}{r^{2}}, & q \ge 2
+    \end{array}\right.
 
 Time Integration
 ----------------
