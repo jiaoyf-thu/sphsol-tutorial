@@ -271,7 +271,7 @@ When considering self-gravity, the monopole and quadpole terms are also calculat
 
 where :math:`l_n` is the edge length of the node, :math:`r` is the distance between a SPH particle and the node, and :math:`\theta` is the open angle. In that case, the node's gravitational force acting on the SPH particle can be approximated as a point mass at the node's center of mass.
 
-The gravatational softening kernel $\phi(r,h)$ is necessary to correct the inter-particle forces, and should match the above M4 kernel. Its radial derivative $\phi'(r,h)$ is given by,
+The gravitational softening kernel :math:'\phi(r,h)' is necessary to correct the inter-particle gravitational forces, and should match the above M4 kernel. Its radial derivative :math:'\phi'(r,h)' is given by,
 
 .. math::
 
