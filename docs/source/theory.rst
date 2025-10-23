@@ -280,9 +280,9 @@ The gravitational softening kernel :math:`\phi(r,h)` is necessary to correct the
 
   \phi'(r, h) =
     \left\{\begin{array}{ll}
-      \frac{1}{h^{2}}\!\left(\frac{4}{3}q - \frac{6}{5}q^{3} + \frac{1}{2}q^{4}\right), & 0 \le q < 1\\
-      \frac{1}{h^{2}}\!\left(\frac{8}{3}q - 3q^{2} + \frac{6}{5}q^{3} - \frac{1}{6}q^{4} - \frac{1}{15q^{2}}\right), & 1 \le q < 2\\
-      \frac{1}{r^{2}}, & q \ge 2
+      \frac{1}{h^{2}}\!\left(\frac{4}{3}r - \frac{6}{5}r^{3} + \frac{1}{2}r^{4}\right), & 0 \le r < 1\\
+      \frac{1}{h^{2}}\!\left(\frac{8}{3}r - 3r^{2} + \frac{6}{5}r^{3} - \frac{1}{6}r^{4} - \frac{1}{15r^{2}}\right), & 1 \le r < 2\\
+      \frac{1}{(rh)^{2}}, & r \ge 2
     \end{array}\right.
 
 Time Integration
