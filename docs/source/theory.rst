@@ -42,7 +42,7 @@ where :math:`r=\left \| x_i-x_j \right \| /h`, and :math:`\alpha_d=3/(2\pi h^3)`
 Lagrange Equations
 ------------------
 
-The Lagrange equations describle the conservation of mass, momentum, and energy,
+The Lagrange equations describe the conservation of mass, momentum, and energy,
 
 .. math::
 
